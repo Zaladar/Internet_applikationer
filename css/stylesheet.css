@@ -1,6 +1,6 @@
 
 
-#navbar body {
+.navbar body {
   margin:0;
   background-color: #a9a9a9;
 }
@@ -16,11 +16,11 @@
     width: 100%;
 }
 
-#navbar li {
+.navbar li {
     float: left;
 }
 
-#navbar li a {
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -28,10 +28,10 @@
     text-decoration: none;
 }
 
-#navbar li a:hover:not(.active) {
+.navbar li a:hover:not(.active) {
     background-color: #111;
 }
 
-#navbar .active {
+.navbar .active {
     background-color: #4CAF50;
 }
