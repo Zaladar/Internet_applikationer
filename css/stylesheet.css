@@ -5,7 +5,7 @@
   background-color: #a9a9a9;
 }
 
-#navbar ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
