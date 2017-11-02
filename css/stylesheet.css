@@ -63,13 +63,13 @@ h1,h2,h3,h4,h5{
 div {
     display:block;
     margin: 0;
-    padding: 0 5%;
+    padding: 0 15%;
     text-align: left;
 }
 
 div.column {
   float: left;
-  width:  50%;
+  width: 35%;
 }
 
 
