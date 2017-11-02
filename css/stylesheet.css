@@ -71,6 +71,11 @@ div.column {
   float: left;
   width: 35%;
 }
+div.row{
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
