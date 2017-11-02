@@ -63,15 +63,22 @@ h1,h2,h3,h4,h5{
 div {
     display:block;
     margin: 0;
-    padding: 0 20%;
+    padding: 0 5%;
     text-align: left;
 }
+
+div.column {
+  float: left;
+  width:  50%;
+}
+
+
 
 /* screen dependency */
 
 @media screen and (max-width: 480px){
   header{padding: 10px 0px}
   nav li{float: none;}
-
-
+  div.column {
+        width: 100%;
 }
