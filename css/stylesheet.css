@@ -1,8 +1,9 @@
 body {margin:0;}
 
-ul.topnav {
+nav {
     list-style-type: none;
     margin: 0;
+    margin-bottom: 2px;
     padding: 0;
     overflow: hidden;
     background-color: #333;
@@ -11,11 +12,11 @@ ul.topnav {
     width: 100%;
 }
 
-ul.topnav li {
+nav li {
     float: left;
 }
 
-ul.topnav li a {
+nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -23,10 +24,10 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {
+nav li a:hover:not(.active) {
     background-color: #111;
 }
 
-ul.topnav .active {
+nav .active {
     background-color: #00008B;
 }
