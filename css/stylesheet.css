@@ -1,5 +1,4 @@
 header{
-    clear: both;
     display: block;
     overflow: hidden;
     position :fixed;
@@ -9,7 +8,6 @@ header{
 }
 
 nav ul {
-    clear: both;
     display: block;
     list-style-type: none;
     margin: 0;
@@ -24,10 +22,12 @@ nav ul {
 nav li {
     float: left;
     border-right: 1px solid #808080;
+    clear: both;
 }
 
 li:last-child {
     border-right: none;
+    clear: both;
 }
 
 nav li a {
@@ -45,3 +45,5 @@ nav li a:hover:not(.active) {
 nav .active {
     background-color: #00008B;
 }
+
+br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
