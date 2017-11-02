@@ -1,4 +1,7 @@
+body{margin:0;}
 header{
+    padding:20px;
+    background-color: #228b22;
 
 }
 
@@ -16,7 +19,7 @@ nav ul {
 
 nav li {
     float: left;
-    border-right: 1px solid #808080;
+    border-right: 1px solid #006400;
 }
 
 li:last-child {
@@ -24,8 +27,8 @@ li:last-child {
 }
 
 nav li a {
-    display: block;
-    color: white;
+  display: block;
+    color: #8b0000 ;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -36,7 +39,15 @@ nav li a:hover:not(.active) {
 }
 
 nav .active {
-    background-color: #00008B;
+    background-color: #00FF00;
 }
 
 br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
+
+@media screen and (max-width: 600px){
+  nav ul li{float: none;}
+}
+
+div {
+  content
+}
