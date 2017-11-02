@@ -56,7 +56,7 @@ br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 
 /* generic text */
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5 {
     text-align:  center;
 }
 
@@ -71,7 +71,7 @@ div.column {
   float: left;
   width: 35%;
 }
-div.row{
+div.row {
   content: "";
   display: table;
   clear: both;
