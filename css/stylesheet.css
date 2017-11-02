@@ -8,11 +8,12 @@ header{
 nav ul {
     display: block;
     list-style-type: none;
-    margin: 0;
+    margin-top: auto;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: fixed;
+    position: fixed;  display: block;
+
     top: 0;
     width: 100%;
 }
