@@ -1,4 +1,5 @@
 header{
+    clear: both;
     display: block;
     overflow: hidden;
     position :fixed;
