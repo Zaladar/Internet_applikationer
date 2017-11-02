@@ -1,4 +1,7 @@
-body{margin:0;}
+body{
+  margin:0;
+  background-color: #778899;
+}
 header{
     display: block;
     padding: 20px 0px;
