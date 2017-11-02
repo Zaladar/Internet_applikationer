@@ -9,6 +9,7 @@ header{
 }
 
 nav ul {
+    clear: both;
     display: block;
     list-style-type: none;
     margin: 0;
