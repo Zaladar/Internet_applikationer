@@ -8,6 +8,7 @@ header{
 
 }
 
+/* this is the nav bar */
 nav {
   position: sticky;
   top: 0;
@@ -47,7 +48,14 @@ nav .active {
     background-color: #00FF00;
 }
 
+/* clearing floats*/
 br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
+
+/* generic text */
+
+h1,h2,h3,h4,h5{
+  text-align:  center;
+}
 
 div {
   display:block;
@@ -58,8 +66,10 @@ div {
 
 }
 
+/* screen dependency */
 
 @media screen and (max-width: 480px){
   header{padding: 10px 0px}
   nav ul li{float: none;}
+
 }
