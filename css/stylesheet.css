@@ -26,6 +26,7 @@ nav li {
 
 li:last-child {
     border-right: none;
+    float: none;
 }
 
 nav li a {
@@ -52,5 +53,5 @@ br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 }
 div {
   display:block;
-  color:#778899
+  background-color: :#778899;
 }
