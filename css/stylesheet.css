@@ -1,5 +1,5 @@
 header{
-    
+
 }
 
 nav ul {
@@ -17,12 +17,10 @@ nav ul {
 nav li {
     float: left;
     border-right: 1px solid #808080;
-    clear: both;
 }
 
 li:last-child {
     border-right: none;
-    clear: both;
 }
 
 nav li a {
