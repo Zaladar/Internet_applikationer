@@ -3,18 +3,19 @@ header{
     display: block;
     padding: 20px 0px;
     background-color: #228b22;
+    text-align: center;
+    width: 100%;
+
 }
 
 nav ul {
     display: block;
     list-style-type: none;
-    margin-top: auto;
+    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: fixed;  display: block;
-
-    top: 0;
+    position: fixed;
     width: 100%;
 }
 
@@ -45,7 +46,8 @@ nav .active {
 
 br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 480px){
+  header{padding: 10px 0px}
   nav ul li{float: none;}
 }
 
