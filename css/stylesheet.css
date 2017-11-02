@@ -7,7 +7,7 @@ header{
     padding: 14px 16px;
 }
 
-nav {
+nav ul {
     display: block;
     list-style-type: none;
     margin: 0;
@@ -21,6 +21,11 @@ nav {
 
 nav li {
     float: left;
+    border-right: 1px solid #808080;
+}
+
+li:last-child {
+    border-right: none;
 }
 
 nav li a {
