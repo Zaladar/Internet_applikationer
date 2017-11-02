@@ -52,7 +52,7 @@ nav .active {
 }
 
 /* clearing floats*/
-br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
+br .clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 
 /* generic text */
 
@@ -67,17 +67,15 @@ div {
     text-align: left;
 }
 
-div.column {
+div .column {
   float: left;
   width: 35%;
 }
-div.row {
+div .row {
   content: "";
   display: table;
   clear: both;
 }
-
-
 
 /* screen dependency */
 
