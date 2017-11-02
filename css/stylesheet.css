@@ -29,8 +29,8 @@ li:last-child {
 }
 
 nav li a {
-  display: block;
-    color: #dc143c ;
+    display: block;
+    color: #dc143c;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -50,7 +50,7 @@ br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
   header{padding: 10px 0px}
   nav ul li{float: none;}
 }
-
 div {
-  
+  display:block;
+  color:#778899
 }
