@@ -1,4 +1,7 @@
-body{margin:0;}
+body{
+    margin:0;
+    background-color: :#778899;
+}
 header{
     display: block;
     padding: 20px 0px;
@@ -10,8 +13,8 @@ header{
 
 /* this is the nav bar */
 nav {
-  position: sticky;
-  top: -1;
+    position: sticky;
+    top: 0;
 }
 nav ul {
     display: block;
@@ -54,16 +57,14 @@ br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 /* generic text */
 
 h1,h2,h3,h4,h5{
-  text-align:  center;
+    text-align:  center;
 }
 
 div {
-  display:block;
-  margin: 0;
-  padding: 0 20%;
-  background-color: :#778899;
-  text-align: left;
-
+    display:block;
+    margin: 0;
+    padding: 0 20%;
+    text-align: left;
 }
 
 /* screen dependency */

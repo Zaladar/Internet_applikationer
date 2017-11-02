@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Minimum Setup</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/calendar.css">
-</head>
-<nav id="navbar">
-   <ul>
-     <li><a class="active" href="/index.html">Home</a></li>
-     <li><a href="/View/Recipies/recipies.html">Recipies</a></li>
-     <li><a href="/View/calendar.html">Calendar</a></li>
-     <!--<li style="float:right"><a href="#about">About</a></li>-->
-   </ul>
-</nav>
-<body>
+    <head>
+      <title>Tasty recipies</title>
+      <link rel="stylesheet" href="css/stylesheet.css">
+   </head>
+   <body>
+     <header>
+       <h1> Tasty Recipies</h1>
+     </header>
+     <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/View/Recipies/recipies.html">Recipies</a></li>
+          <li><a href="/View/calendar.html">Calendar</a></li>
+          <!--<li style="float:right"><a href="#about">About</a></li>-->
+        </ul>
+    </nav>
+    <br class="clear" />
+    <div class="month">
+       <ul>
+           <li class="prev">&#10094;</li>
+           <li class="next">&#10095;</li>
+           <li>
+             August<br>
+             <span style="font-size:18px">2017</span>
+           </li>
+       </ul>
+    </div>
 
-    <div id="calendar"></div>
+    <ul class="weekdays">
+       <li>Mo</li>
+       <li>Tu</li>
+       <li>We</li>
+       <li>Th</li>
+       <li>Fr</li>
+       <li>Sa</li>
+       <li>Su</li>
+    </ul>
 
-    <script type="text/javascript" src="js/vendor/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="js/vendor/underscore-min.js"></script>
-    <script type="text/javascript" src="js/calendar.js"></script>
-    <script type="text/javascript">
-        var calendar = $("#calendar").calendar(
-            {
-                tmpl_path: "/tmpls/",
-                events_source: function () { return []; }
-            });
-    </script>
-</body>
+    <ul class="days">
+       <li>1</li>
+       <li>2</li>
+       <li>3</li>
+       <li>4</li>
+       <li>5</li>
+       <li>6</li>
+       <li>7</li>
+       <li>8</li>
+       <li>9</li>
+       <li><span class="active">10</span></li>
+       <li>11</li>
+    </ul>
+  </body>
 </html>
