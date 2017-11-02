@@ -8,14 +8,16 @@ header{
 
 }
 
+nav {
+  position: sticky;
+  top: 0;
+}
 nav ul {
     display: block;
     list-style-type: none;
     overflow: hidden;
     background-color: #333;
     width: 100%;
-    position: sticky;
-    top: 0;
     margin: 0;
     padding: 0;
 }
