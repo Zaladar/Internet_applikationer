@@ -11,7 +11,7 @@ header{
 /* this is the nav bar */
 nav {
   position: sticky;
-  top: 0;
+  top: -1;
 }
 nav ul {
     display: block;
