@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
-
-
+@import "http://www.w3.org/StyleSheets/Core/Traditional";
 body{
     margin:0;
     background-color: #c0c0c0;
