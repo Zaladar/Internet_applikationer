@@ -45,6 +45,8 @@ img {
     list-style-type: none;
     min-width: 100px;
     max-width: 163px;
+    min-height: 100px;
+    max-height: 163px;
     width: 13.6%;
     height: auto;
     text-align: center;
