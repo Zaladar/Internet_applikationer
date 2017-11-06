@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@@import "reset.css";
+@import "reset.css";
 body{
     margin:0;
     background-color: #c0c0c0;
