@@ -73,7 +73,7 @@ div .column {
 }
 div .row {
   content: "";
-  margin:
+  margin: 0 5%;
   display: table;
 }
 
