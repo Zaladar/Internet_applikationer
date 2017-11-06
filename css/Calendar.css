@@ -20,13 +20,13 @@ ul {list-style-type: none;}
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-.week {
 
 .days {
     padding: 0;
     margin: 0;
 }
 
+.week {
     display: block;
     width: 100%;
 }
