@@ -26,8 +26,8 @@ ul {list-style-type: none;}
     margin: 0;
 }
 
-.week:last-child {
-
+.week {
+    display: block;
 }
 
 .days li {
