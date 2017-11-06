@@ -62,7 +62,6 @@ h1,h2,h3,h4,h5 {
 
 div {
     display:block;
-    margin: 0 20%;
     padding: 0;
     text-align: left;
 }
@@ -72,7 +71,6 @@ div .column {
   max-width: 50%;
 }
 div .row {
-  margin-left: 0 15%;
   content: "";
   display: table;
 }
@@ -82,6 +80,9 @@ div .row {
 @media screen and (max-width: 480px){
   header{padding: 10px 0px}
   nav li{float: none;}
+  body {
+    margin: 5%
+  }
   div.column {
         width: 100%;
 }
