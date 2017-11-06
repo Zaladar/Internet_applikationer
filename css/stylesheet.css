@@ -63,7 +63,7 @@ h1,h2,h3,h4,h5 {
 
 div {
     display:block;
-    padding: 0;
+    padding: 0;p+
     text-align: left;
 }
 
@@ -83,7 +83,13 @@ div .column {
 
 @media screen and (max-width: 480px){
   header{padding: 10px 0px}
-  nav li{float: none;}
+  nav li{
+    float: none;
+  }
+  nav li a{
+    padding: 7px 8px;
+
+  }
   body {
     margin: 5%
   }
