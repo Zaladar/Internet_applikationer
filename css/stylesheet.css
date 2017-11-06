@@ -3,6 +3,8 @@
 body{
     margin:0;
     background-color: #c0c0c0;
+    color: black;
+    /*sätt link vlink alink*/
     font-family: Verdana, sans-serif;
 }
 header{
