@@ -81,10 +81,9 @@ div .column {
 
 /* screen dependency */
 
-@media screen and ((max-width: 480px) or (max-height: 480px){
+@media screen and ((max-width: 480px) or (max-height: 480px)){
   header{padding: 10px 0px}
   nav li{
-    max
     float: none;
   }
   nav li a{
