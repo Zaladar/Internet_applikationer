@@ -1,10 +1,9 @@
 ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
 
 /* Month header */
 .month {
     display: block;
-    padding: 70px 25px;
+    padding: 50px 15px;
     width: 100%;
     background: #228b22;
     text-align: center;
@@ -17,7 +16,6 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .month ul li {
-    color: white;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -29,6 +27,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 
+
 .days li {
     float: left;
     list-style-type: none;
@@ -36,9 +35,9 @@ body {font-family: Verdana, sans-serif;}
     width: 100px;
     height: 100px;
     text-align: center;
-    margin-bottom: 0px;
+    margin-top: 5px;
     font-size:12px;
-    color:#777;
+    color: #dc143c;
     border-right: 1px solid #006400;
     border-bottom: 1px;
 
@@ -46,7 +45,7 @@ body {font-family: Verdana, sans-serif;}
 
 /* Highlight the "current" day */
 .days li .active {
-    padding: 5px;
+
     background: #1abc9c;
     color: white !important
 }

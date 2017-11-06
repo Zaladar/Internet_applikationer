@@ -3,6 +3,7 @@
 body{
     margin:0;
     background-color: #c0c0c0;
+    font-family: Verdana, sans-serif;
 }
 header{
     display: block;
@@ -10,7 +11,7 @@ header{
     background-color: #228b22;
     text-align: center;
     width: 100%;
-
+    text-transform: uppercase;
 }
 
 /* this is the nav bar */
