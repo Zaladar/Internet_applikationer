@@ -68,8 +68,8 @@ div {
 }
 
 div .row {
-  margin: 0 7% 0 7%;
-  display: table;
+  margin: 0 7%;
+  display: block;
 }
 
 div .column {
