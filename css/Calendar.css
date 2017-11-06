@@ -64,3 +64,13 @@ img {
     background: #1abc9c;
     color: white !important
 }
+
+@media screen and (max-width: 480px){
+    .week {
+      margin: 0;
+    }
+
+    .month{
+      padding: 12px 7px;
+    }
+}
