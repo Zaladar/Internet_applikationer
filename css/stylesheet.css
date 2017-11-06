@@ -89,11 +89,24 @@ p{
 
 /* screen dependency */
 
-@media screen and (max-width: 480px), (max-height: 480px){
+@media screen and (max-width: 480px){
   header{padding: 10px 0px}
   nav li{
     float: none;
   }
+  nav li a{
+    padding: 7px 8px;
+
+  }
+  div .column {
+        width: 100%;
+  }
+  div .row{
+    margin: 0;
+  }
+}
+@media screen and (max-height: 480px){
+  header{padding: 10px 0px}
   nav li a{
     padding: 7px 8px;
 
