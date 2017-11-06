@@ -56,7 +56,6 @@ nav .active {
 
 /* clearing floats*/
 br.clr { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
-
 /* generic text */
 
 h1,h2,h3,h4,h5 {
