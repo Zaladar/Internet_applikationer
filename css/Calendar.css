@@ -3,6 +3,7 @@ body {font-family: Verdana, sans-serif;}
 
 /* Month header */
 .month {
+    display: block;
     padding: 70px 25px;
     width: 100%;
     background: #228b22;
