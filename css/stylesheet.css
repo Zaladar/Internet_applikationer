@@ -72,6 +72,7 @@ div .column {
 }
 div .row {
   content: "";
+  margin: 0 15%;
   display: table;
 }
 
