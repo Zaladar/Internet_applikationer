@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/*@charset "UTF-8";*/
 
 body{
     margin:0;
@@ -55,7 +55,7 @@ nav .active {
 }
 
 /* clearing floats*/
-.clr { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
+br .clr { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 
 /* generic text */
 
@@ -91,9 +91,6 @@ div .column {
   nav li a{
     padding: 7px 8px;
 
-  }
-  body {
-    margin: 5%
   }
   div .column {
         width: 100%;
