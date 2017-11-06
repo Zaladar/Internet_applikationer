@@ -67,14 +67,16 @@ div {
     text-align: left;
 }
 
-div .column {
-  float: left;
-  max-width: 50%;
-}
 div .row {
   margin: 0 7% 0 7%;
   display: table;
 }
+
+div .column {
+  float: left;
+  max-width: 50%;
+}
+
 
 /* screen dependency */
 
