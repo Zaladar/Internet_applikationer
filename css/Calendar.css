@@ -1,4 +1,3 @@
-ul {list-style-type: none;}
 
 /* Month header */
 .month {
@@ -35,7 +34,6 @@ ul {list-style-type: none;}
 .days li {
     float: left;
     list-style-type: none;
-    display: block;
     min-width: 100px;
     max-width: 13.6%;
     height: 100px;
