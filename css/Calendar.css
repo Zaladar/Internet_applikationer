@@ -38,6 +38,7 @@ ul {list-style-type: none;}
     list-style-type: none;
     min-width: 100px;
     max-width: 13.6%;
+    min-height: 100px;
     height: 100px;
     text-align: center;
     margin-top: 5px;
