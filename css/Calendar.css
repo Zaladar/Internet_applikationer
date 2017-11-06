@@ -63,7 +63,7 @@ img {
 
 /* Highlight the "current" day */
 .days li.active {
-    color: #00FF00;
+    background-color: #00FF00;
 }
 
 @media screen and (max-width: 480px), (max-height: 480px){
