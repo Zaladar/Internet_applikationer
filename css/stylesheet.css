@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@@import "reset.css";
 body{
     margin:0;
     background-color: #c0c0c0;
@@ -45,7 +46,7 @@ nav li a {
 }
 
 nav li a:hover:not(.active) {
-    background-color: #111;
+    bacssresetckground-color: #111;
 }
 
 nav .active {
