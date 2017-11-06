@@ -80,7 +80,13 @@ div .column {
   max-width: 50%;
 }
 
+ul{
+  font-size: 18px;
+}
 
+p{
+  font-size: 18px;
+}
 
 /* screen dependency */
 
