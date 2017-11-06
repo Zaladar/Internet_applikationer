@@ -24,7 +24,7 @@ ul {list-style-type: none;}
 .days {
     padding: 0;
     margin: 0;
-    width: 100%
+    max-width: 100%;
 }
 
 .week {
@@ -38,7 +38,6 @@ ul {list-style-type: none;}
     list-style-type: none;
     min-width: 100px;
     max-width: 13.6%;
-    min-height: 100px;
     height: 100px;
     text-align: center;
     margin-top: 5px;
