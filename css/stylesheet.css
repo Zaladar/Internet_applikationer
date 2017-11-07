@@ -111,6 +111,9 @@ p{
   div .row{
     margin: 0;
   }
+  p{
+    margin:0;
+  }  
   .week {
     margin: 0;
   }
@@ -142,6 +145,8 @@ p{
 
   .week {
     margin: 0;
+  }p{
+    margin:0;
   }
 
   .month{
