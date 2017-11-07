@@ -100,7 +100,8 @@ p{
 
   }
   div .column {
-        width: 100%;
+    float: none;
+    width: 100%;
   }
   div .row{
     margin: 0;
@@ -120,7 +121,8 @@ p{
 
   }
   div .column {
-        width: 100%;
+    float: none;
+    width: 100%;
   }
   div .row{
     margin: 0;
