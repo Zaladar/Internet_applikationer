@@ -70,12 +70,16 @@ div {
     text-align: left;
 }
 
-div .row {
+div.marg{
+   margin: 0 20%;
+}
+
+div.row {
   margin: 0 20%;
   display: block;
 }
 
-div .column {
+div.column {
   float: left;
   width: 50%;
 }
@@ -87,7 +91,7 @@ ul{
 p{
   font-size: 18px;
 }
-
+.
 /* screen dependency */
 
 @media screen and (max-width: 480px){
