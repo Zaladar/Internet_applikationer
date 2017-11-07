@@ -81,7 +81,7 @@ div.row {
 
 div.column {
   float: left;
-  width: 50%;
+  width: 33%;
 }
 
 ul{
@@ -92,7 +92,14 @@ p{
   font-size: 18px;
   margin: 0 20%;
 }
-.
+
+div.comments {
+    text-align: left;
+}
+
+div.ucomment {
+  
+}
 /* screen dependency */
 
 @media screen and (max-width: 480px){
@@ -104,16 +111,19 @@ p{
     padding: 7px 8px;
 
   }
-  div .column {
+  div.marg{
+    margin: 0;
+  }
+  div.column {
     float: none;
     width: 100%;
   }
-  div .row{
+  div.row{
     margin: 0;
   }
   p{
     margin:0;
-  }  
+  }
   .week {
     margin: 0;
   }
