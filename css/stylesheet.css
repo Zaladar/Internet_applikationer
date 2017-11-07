@@ -5,7 +5,7 @@ body{
     color: black;
     /*sätt link vlink alink*/
     font-family: Verdana, sans-serif;
-    line-height: normal;
+    line-height: 0;
 }
 header{
     display: block;
