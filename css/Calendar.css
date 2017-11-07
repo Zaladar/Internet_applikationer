@@ -1,4 +1,6 @@
-ul {list-style-type: none;}
+ul {list-style-type: none;
+  overflow: hidden;
+}
 
 img {
   max-width: 100px;
@@ -35,7 +37,6 @@ img {
 }
 
 ul.days{
-  overflow: hidden;
 }
 
 .week {
