@@ -67,13 +67,3 @@ img {
 .days li.active {
     background-color: #00FF00;
 }
-
-@media screen and (max-width: 480px), (max-height: 480px){
-    .week {
-      margin: 0;
-    }
-
-    .month{
-      padding: 12px 7px;
-    }
-}
