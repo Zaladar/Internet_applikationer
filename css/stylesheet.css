@@ -86,6 +86,7 @@ div.column {
 
 ul{
   font-size: 18px;
+  overflow: hidden;
 }
 
 p{
@@ -98,7 +99,7 @@ div.comments {
 }
 
 div.ucomment {
-  
+
 }
 /* screen dependency */
 
