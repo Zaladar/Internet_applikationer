@@ -97,14 +97,6 @@ p{
   margin: 0 20%;
 }
 
-div.comments {
-    margin-top: 15px;
-    text-align: left;
-}
-
-div.ucomment {
-
-}
 /* screen dependency */
 
 @media screen and (max-width: 480px){
