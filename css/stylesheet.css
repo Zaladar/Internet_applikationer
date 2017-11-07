@@ -16,8 +16,7 @@ header{
     text-transform: uppercase;
 }
 
-/*
-========================= NAV BAR =========================*/
+/*========================= NAV BAR =========================*/
 nav {
     position: sticky;
     top: 0;
@@ -28,19 +27,16 @@ nav ul {
     overflow: hidden;
     background-color: #333;
     width: 100%;
-    margin: 0;ucomment
+    margin: 0;
     padding: 0;
 }
-
 nav li {
     float: left;
     border-right: 1px solid #006400;
 }
-
 nav li:last-child {
     border-right: none;
 }
-
 nav li a {
     display: block;
     color: #dc143c;
@@ -48,27 +44,22 @@ nav li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 nav li a:hover:not(.active) {
     background-color: #111;
 }
-
 nav .active {
     background-color: #00FF00;
 }
 
-/*
-========================= clearing floats =========================*/
+/*========================= clearing floats =========================*/
 br.clr { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 
-/*
-========================= GENERIC TEXT ========================= */
+/*========================= GENERIC TEXT ========================= */
 
 h1,h2,h3,h4,h5 {
     text-align:  center;
     font-weight: bold;
 }
-
 div {
     display:block;
     padding: 0;
@@ -79,32 +70,27 @@ ul{
   font-size: 18px;
   overflow: hidden;
 }
-
 p{
   font-size: 18px;
   margin: 0 20%;
 }
-/*
-========================= MARGIN =========================*/
+/*========================= MARGIN =========================*/
 div.marg{
    margin: 0 20%;
 }
 
-/*
-========================= COLUMNS =========================*/
+/*========================= COLUMNS =========================*/
 div.row {
   margin: 0 20%;
   display: block;
 }
-
 div.column {
   float: left;
   width: 30%;
   margin: 0 1%;
 }
 
-/*
-========================= CALENDAR =========================*/
+/*========================= CALENDAR =========================*/
 
 /* Month header */
 .month {
@@ -115,24 +101,19 @@ div.column {
     text-align: center;
     margin-bottom: 5px;
 }
-
-
 .month ul {
     margin: 0;
     padding: 0;
-}
-
+} Value Error : height Too many values or values are not recognized : 13,6%
 .month ul li {
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-
 .week {
     display: block;
     width: 100%;
 }
-
 .days {
     padding: 0;
     margin: 0;
@@ -140,16 +121,12 @@ div.column {
     overflow: hidden;
     display:block;
 }
-
-
-
 .days img {
   max-width: 100px;
   max-height: 70px;
   width: auto;
   height: auto;
 }
-
 .days li {
     float: left;
     list-style-type: none;
@@ -158,7 +135,7 @@ div.column {
     min-height: 100px;
     max-height: 163px;
     width: 13.6%;
-    height: 13,6%;
+    height: 13.6%;
     text-align: center;
     margin-top: 5px;
     font-size:12px;
@@ -170,17 +147,12 @@ div.column {
 .days li:last-child{
   border-right: none;
 }
-
-/* Highlight the "current" day */
 .days li.active {
     background-color: #00FF00;
 }
 
-/*
-========================= COMMENTS =========================*/
-div.comments{
-
-}
+/*========================= COMMENTS =========================*/
+div.comments{}
 div.ucomment{
   margin-bottom: 25px;
 }
