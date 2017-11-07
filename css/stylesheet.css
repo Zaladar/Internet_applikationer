@@ -124,11 +124,14 @@ p{
     padding: 7px 8px;
 
   }
-  div .column {
+  div.column {
     float: none;
     width: 100%;
   }
-  div .row{
+  div.row{
+    margin: 0;
+  }
+  div.marg{
     margin: 0;
   }
   .week {
