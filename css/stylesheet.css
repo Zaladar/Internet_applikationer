@@ -171,6 +171,12 @@ div.ucomment p {
 
 /*
 ========================= screen dependency =========================*/
+@media screen and (max-width:800px){
+  div.column {
+    float:none;
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 480px){
   header{padding: 10px 0px}
