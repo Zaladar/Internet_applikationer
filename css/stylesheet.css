@@ -15,9 +15,9 @@ header{
     width: 100%;
     text-transform: uppercase;
 }
-
 /*========================= NAV BAR =========================*/
 nav {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -50,7 +50,6 @@ nav li a:hover:not(.active) {
 nav .active {
     background-color: #00FF00;
 }
-
 /*========================= clearing floats =========================*/
 br.clr { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 
@@ -89,10 +88,7 @@ div.column {
   width: 30%;
   margin: 0 1%;
 }
-
 /*========================= CALENDAR =========================*/
-
-/* Month header */
 .month {
     display: block;
     padding: 25px 15px;
@@ -167,10 +163,7 @@ small.date{
 div.ucomment p {
   margin:0;
 }
-
-
-/*
-========================= screen dependency =========================*/
+/*========================= screen dependency =========================*/
 @media screen and (max-width:800px){
   div.column {
     float:none;
