@@ -90,6 +90,7 @@ ul{
 
 p{
   font-size: 18px;
+  margin: 0 20%;
 }
 .
 /* screen dependency */
@@ -134,6 +135,11 @@ p{
   div.marg{
     margin: 0;
   }
+  p{
+    margin:0;
+  }
+
+
   .week {
     margin: 0;
   }
