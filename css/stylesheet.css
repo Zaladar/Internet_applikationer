@@ -180,7 +180,7 @@ img {
 div.comments{
 
 }
-div.ucommets{
+div.ucomment{
 
 }
 small.name{
@@ -191,7 +191,7 @@ small.date{
   float: right;
 
 }
-div.ucomments p {
+div.ucomment p {
   margin:0;
 }
 
