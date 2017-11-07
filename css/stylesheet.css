@@ -16,7 +16,8 @@ header{
     text-transform: uppercase;
 }
 
-/* this is the nav bar */
+/*
+========================= NAV BAR =========================*/
 nav {
     position: sticky;
     top: 0;
@@ -36,7 +37,7 @@ nav li {
     border-right: 1px solid #006400;
 }
 
-li:last-child {
+nav li:last-child {
     border-right: none;
 }
 
@@ -56,9 +57,12 @@ nav .active {
     background-color: #00FF00;
 }
 
-/* clearing floats*/
+/*
+========================= clearing floats =========================*/
 br.clr { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
-/* generic text */
+
+/*
+========================= GENERIC TEXT ========================= */
 
 h1,h2,h3,h4,h5 {
     text-align:  center;
@@ -71,11 +75,23 @@ div {
     margin: 0;
     text-align: left;
 }
+ul{
+  font-size: 18px;
+  overflow: hidden;
+}
 
+p{
+  font-size: 18px;
+  margin: 0 20%;
+}
+/*
+========================= MARGIN =========================*/
 div.marg{
    margin: 0 20%;
 }
 
+/*
+========================= COLUMNS =========================*/
 div.row {
   margin: 0 20%;
   display: block;
@@ -87,17 +103,101 @@ div.column {
   margin: 0 1%;
 }
 
-ul{
-  font-size: 18px;
-  overflow: hidden;
+/*
+========================= CALENDAR =========================*/
+ul {list-style-type: none;}
+
+img {
+  max-width: 100px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
 }
 
-p{
-  font-size: 18px;
-  margin: 0 20%;
+/* Month header */
+.month {
+    display: block;
+    padding: 25px 15px;
+    width: 100%;
+    background: #228b22;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
-/* screen dependency */
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.days {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    display:block;
+}
+
+.week {
+    display: block;
+    width: 100%;
+}
+
+.days li {
+    float: left;
+    list-style-type: none;
+    min-width: 100px;
+    max-width: 163px;
+    min-height: 100px;
+    max-height: 163px;
+    width: 13.6%;
+    height: 13,6%;
+    text-align: center;
+    margin-top: 5px;
+    font-size:12px;
+    color: #dc143c;
+    border-right: 1px solid #006400;
+    border-bottom: 1px;
+
+}
+.days li:last-child{
+  border-right: none;
+}
+
+/* Highlight the "current" day */
+.days li.active {
+    background-color: #00FF00;
+}
+
+/*
+========================= COMMENTS =========================*/
+div.comments{
+
+}
+div.ucommets{
+
+}
+small.name{
+  float: left;
+
+}
+small.date{
+  float: right;
+
+}
+div.ucomments p {
+  margin:0;
+}
+
+
+/*
+========================= screen dependency =========================*/
 
 @media screen and (max-width: 480px){
   header{padding: 10px 0px}
