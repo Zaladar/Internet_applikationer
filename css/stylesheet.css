@@ -106,14 +106,6 @@ div.column {
 /*
 ========================= CALENDAR =========================*/
 
-
-div.days img {
-  max-width: 100px;
-  max-height: 70px;
-  width: auto;
-  height: auto;
-}
-
 /* Month header */
 .month {
     display: block;
@@ -136,6 +128,11 @@ div.days img {
     letter-spacing: 3px;
 }
 
+.week {
+    display: block;
+    width: 100%;
+}
+
 .days {
     padding: 0;
     margin: 0;
@@ -144,9 +141,13 @@ div.days img {
     display:block;
 }
 
-.week {
-    display: block;
-    width: 100%;
+
+
+div.days img {
+  max-width: 100px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
 }
 
 .days li {
