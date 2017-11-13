@@ -198,7 +198,7 @@ button:hover {
     opacity: 0.8;
 }
 
-.container {
+.logincontainer {
     padding: 16px;
 }
 
@@ -217,7 +217,6 @@ button:hover {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     padding-top: 60px;
 }
-
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
@@ -225,6 +224,7 @@ button:hover {
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
 }
+form {max-width: 300px;}
 /*========================= screen dependency =========================*/
 @media screen and (max-width:800px){
   div.column {
