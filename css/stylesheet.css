@@ -49,26 +49,17 @@ nav li a:hover:not(.active) {
 }
 nav li button {
     display: block;
-    float: right;
     color: #dc143c;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-nav li button:hover:not(.active) {
-    background-color: #111;
-}
-nav .active {
-    background-color: #00FF00;
-}
-button {
     border: none;
     cursor: pointer;
     width: 100%;
 }
 
-button:hover {
-    opacity: 0.8;
+nav .active {
+    background-color: #00FF00;
 }
 /*========================= clearing floats =========================*/
 br.clr { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
