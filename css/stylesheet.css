@@ -49,6 +49,7 @@ nav li a:hover:not(.active) {
 }
 nav li button {
     display: block;
+    float: right;
     color: #dc143c;
     text-align: center;
     padding: 14px 16px;
