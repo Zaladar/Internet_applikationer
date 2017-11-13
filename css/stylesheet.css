@@ -4,8 +4,8 @@ body{
     margin:0;
     background-color: #c0c0c0;
     color: black;
-    /*sätt link vlink alink*/
     font-family: Verdana, sans-serif;
+    text-align: center;
 }
 header{
     display: block;
@@ -48,6 +48,8 @@ nav li a:hover:not(.active) {
     background-color: #111;
 }
 nav li button {
+    background-color: #333;
+    border-left: 1px solid #006400;
     display: block;
     color: #dc143c;
     text-align: center;
@@ -65,7 +67,7 @@ nav .active {
 br.clr { clear:both; display:block; height:1px; margin:-1px 0 0 0 }
 
 /*========================= GENERIC TEXT ========================= */
-</php>
+
 h1,h2,h3,h4,h5 {
     text-align:  center;
     font-weight: bold;
