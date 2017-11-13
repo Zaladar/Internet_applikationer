@@ -33,9 +33,6 @@ nav li {
     float: left;
     border-right: 1px solid #006400;
 }
-nav li:last-child {text-align
-    border-right: none;
-}
 nav li a {
     display: block;
     color: #dc143c;
@@ -45,9 +42,6 @@ nav li a {
 }
 nav li a:hover:not(.active) {
     background-color: #111;
-}
-nav li a:last-child{
-  border-right: none;
 }
 nav li button {
     background-color: #333;
