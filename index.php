@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start();  ?>
     <head>
       <title>Tasty recipies</title>
       <link rel="stylesheet" href="/css/stylesheet.css">
@@ -17,8 +18,8 @@
       <nav>
         <ul>
           <li><a class="active" href="#">Home</a></li>
-          <li><a href="/View/Recipies/recipies.html">Recipies</a></li>
-          <li><a href="/View/calendar.html">Calendar</a></li>
+          <li><a href="/View/Recipies/recipies.php">Recipies</a></li>
+          <li><a href="/View/calendar.php">Calendar</a></li>
           <li style="float:right"><a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</a></li>
           <!--<li style="float:right"><a href="#about">About</a></li>-->
         </ul>
@@ -28,13 +29,13 @@
         <form class="modal-content animate" action="index.html" method="post">
           <div class="container">
             <label></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="text" placeholder="Enter Username" name="username" required>
             <label></label>      <script src="/Script/loginclose.js"></script>
 
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Enter Password" name="password" required>
             <button type="submit">Login</button>
           </div>
-        </form>
+        </form>   session_start();
       </div>
       <div>
         <div class="marg">

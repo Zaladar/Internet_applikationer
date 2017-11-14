@@ -12,9 +12,10 @@
      </header>
      <nav>
         <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/View/Recipies/recipies.html">Recipies</a></li>
+          <li><a href="/index.php">Home</a></li>
+          <li><a href="/View/Recipies/recipies.php">Recipies</a></li>
           <li><a class="active" href="#">Calendar</a></li>
+          <li style="float:right"><a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</a></li>
           <!--<li style="float:right"><a href="#about">About</a></li>-->
         </ul>
         <br class="clr"/>
