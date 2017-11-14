@@ -1,27 +1,13 @@
 <?php
-   //include 'init/config.php';
-   $servername = "localhost";
-   $username = "root";
-   $password = "niclas91";
-   $database = "site"
-   $conn = new mysqli($servername, $username, $password, $database);
-   //session_start();
+   include 'init/config.php';
+   session_start();
    echo("its working sortof");
-   $sql = "SELECT username FROM user WHERE username = '$_POST['username']' and password = '$_POST['password']'";
-   $result = $conn->query($sql);
-   if ($result->num_rows > 0) {
-     while($row = $result->fetch_assoc()) {
-       echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-    }
-  } else {
-  echo "0 results";
-}
-$conn->close();
-   /*if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
         /*$myusername = mysqli_real_escape_string($conn,$_POST['username']);
         $mypassword = mysqli_real_escape_string($conn,$_POST['password']);*/
-/*
+        
         $sql = "SELECT username FROM user WHERE username = '$_POST['username']' and password = '$_POST['password']'";
         $result = $conn->query($sql);
         $row = $result->fetch_assoc();
@@ -46,6 +32,6 @@ $conn->close();
            $conn->close();
            header("location: index.php");
         }*/
-   //}
+   }
 
 ?>
