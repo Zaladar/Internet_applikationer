@@ -1,8 +1,7 @@
-<?php
- session_start();
- if($_SESSION['lol']=='yes'){'hello world'} ?>
+<!DOCTYPE html>
 <html lang="en">
-
+    <?php
+    session_start();  ?>
     <head>
       <title>Tasty recipies</title>
       <link rel="stylesheet" href="/css/stylesheet.css">
@@ -58,3 +57,4 @@
       </div>
    </body>
 </html>
+<?php if($_SESSION['lol']=='yes'){echo('hello world')} ?>
