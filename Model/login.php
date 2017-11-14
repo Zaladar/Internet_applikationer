@@ -21,14 +21,14 @@
            session_register("myusername");
            $_SESSION['login_user'] = $myusername;
            $conn->close();
-           header("location: index.php");
+           header("location: ../index.php");
         }
 
         else {
           echo("DIS didnt BORKED 2");
            $error = "Your Login Name or Password is invalid";
            $conn->close();
-           header("location: index.php");
+           header("location: ../index.php");
         }//*/
    }
 
