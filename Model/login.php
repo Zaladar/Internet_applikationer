@@ -7,7 +7,17 @@
    $conn = new mysqli($servername, $username, $password, $database);
    //session_start();
    echo("its working sortof");
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
+   $sql = "SELECT username FROM user WHERE username = '$_POST['username']' and password = '$_POST['password']'";
+   $result = $conn->query($sql);
+   if ($result->num_rows > 0) {
+     while($row = $result->fetch_assoc()) {
+       echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    }
+  } else {
+  echo "0 results";
+}
+$conn->close();
+   /*if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
         /*$myusername = mysqli_real_escape_string($conn,$_POST['username']);
         $mypassword = mysqli_real_escape_string($conn,$_POST['password']);*/
@@ -18,7 +28,7 @@
         $active = $row['active'];
         echo("$result");
         $count = mysqli_num_rows($result);
-        echo("DIS BORKED 1");*/
+        echo("DIS BORKED 1");
 
         // If result matched $myusername and $mypassword, table row must be 1 row
 
@@ -36,6 +46,6 @@
            $conn->close();
            header("location: index.php");
         }*/
-   }
+   //}
 
 ?>
