@@ -4,7 +4,7 @@
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
 
-      $myusername = mysqli_real_escape_string($conn,$_POST['username']);
+    /*  $myusername = mysqli_real_escape_string($conn,$_POST['username']);
       $mypassword = mysqli_real_escape_string($conn,$_POST['password']);
 
       $sql = "SELECT username FROM users WHERE username = '$myusername' and password = '$mypassword'";
@@ -26,8 +26,8 @@
          $error = "Your Login Name or Password is invalid";
          $conn->close();
          header("location: index.php");
-
-      }
+      }*/
+      echo("got post lol")
    }
-   else{echo("FUCKDIS")}
+   else{echo("FUCKDIS");}
 ?>
