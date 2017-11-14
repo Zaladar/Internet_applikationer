@@ -21,6 +21,7 @@
          session_register("myusername");
          $_SESSION['login_user'] = $myusername;
          $conn->close();
+         $_SESSION['lol'] = 'yes';
          header("location: index.php");
       }else {
          $error = "Your Login Name or Password is invalid";
