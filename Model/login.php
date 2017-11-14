@@ -1,6 +1,10 @@
 <?php
    include "Init/config.php";
    session_start();
+   if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
         /*$myusername = mysqli_real_escape_string($conn,$_POST['username']);
@@ -8,7 +12,8 @@
 
         $sql = "SELECT username FROM site WHERE username = '$_POST['username']' and password = '$_POST['password']'";
         $result = $conn->query($sql);
-        $row = $row = $result->fetch_assoc();
+        $result ->num_rows;
+        $row = $result->fetch_assoc();
         $active = $row['active'];
 
         $count = mysqli_num_rows($result);
