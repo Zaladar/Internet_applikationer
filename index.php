@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php include /Model/Init/config.php
+    session_start();  ?>
     <head>
-    <?php session_start();  ?>
       <title>Tasty recipies</title>
       <link rel="stylesheet" href="/css/stylesheet.css">
       <meta charset="UTF-8">
@@ -32,7 +33,7 @@
             <input type="password" placeholder="Enter Password" name="password" required>
             <button type="submit">Login</button>
           </div>
-        </form>   session_start();
+        </form>
       </div>
       <div>
         <div class="marg">

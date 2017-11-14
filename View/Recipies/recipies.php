@@ -37,8 +37,8 @@
           <div>
             <h2>These are the current recipies!</h2>
             <ul>
-              <li><a href="meatballs.html">Meatballs!</a> </li>
-              <li><a href="pancakes.html">Pancakes!</a> </li>
+              <li><a href="meatballs.php">Meatballs!</a> </li>
+              <li><a href="pancakes.php">Pancakes!</a> </li>
             </ul>
           </div>
         </div>

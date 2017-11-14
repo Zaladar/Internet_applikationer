@@ -60,7 +60,7 @@
             <li>11</li>
             <li>12</li>
             <li>13 <br/>
-              <a href="/View/Recipies/meatballs.html">
+              <a href="/View/Recipies/meatballs.php">
                 <img src="/Images/meatballs.jpg" alt="Meatballs">
               </a>
             </li>
@@ -84,7 +84,7 @@
           <ul class="days">
             <li>22</li>
             <li>23 <br/>
-              <a href="/View/Recipies/pancakes.html">
+              <a href="/View/Recipies/pancakes.php">
                 <img src="/Images/pancakes.jpg" alt="Pancakes" >
               </a>
             </li>
