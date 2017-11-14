@@ -1,5 +1,5 @@
 <?php
-   include "Init/config.php";
+   include 'Init/config.php';
    session_start();
    echo("its working sortof");
    if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -28,7 +28,6 @@
 
         else {
           echo("DIS didnt BORKED 2");
-
            $error = "Your Login Name or Password is invalid";
            $conn->close();
            header("location: index.php");
