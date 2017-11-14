@@ -7,14 +7,13 @@
         /*$myusername = mysqli_real_escape_string($conn,$_POST['username']);
         $mypassword = mysqli_real_escape_string($conn,$_POST['password']);*/
         echo("$_POST['username']");
-        $sql = "SELECT username FROM user WHERE username = '$_POST['username']' and password = '$_POST['password']'";
+        /*$sql = "SELECT username FROM user WHERE username = '$_POST['username']' and password = '$_POST['password']'";
         $result = $conn->query($sql);
-        $result->num_rows;
         $row = $result->fetch_assoc();
         $active = $row['active'];
         echo("$result");
         $count = mysqli_num_rows($result);
-        echo("DIS BORKED 1");
+        echo("DIS BORKED 1");*/
 
         // If result matched $myusername and $mypassword, table row must be 1 row
 
