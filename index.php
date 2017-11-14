@@ -55,6 +55,6 @@
           </p>
         </div>
       </div>
-      <?php if($_SESSION['lol']=='yes'){'hello world'} ?>
    </body>
 </html>
+<?php if($_SESSION['lol']=='yes'){'hello world'} ?>
