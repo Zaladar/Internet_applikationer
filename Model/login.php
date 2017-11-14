@@ -1,6 +1,11 @@
 <?php
-   include 'init/config.php';
-   session_start();
+   //include 'init/config.php';
+   $servername = "localhost";
+   $username = "root";
+   $password = "niclas91";
+   $database = "site"
+   $conn = new mysqli($servername, $username, $password, $database);
+   //session_start();
    echo("its working sortof");
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
