@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
  session_start();
  if($_SESSION['lol']=='yes'){'hello world'} ?>
