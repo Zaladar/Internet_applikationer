@@ -1,5 +1,5 @@
 <?php
-   include 'Init/config.php';
+   include 'init/config.php';
    session_start();
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
@@ -16,16 +16,13 @@
         // If result matched $myusername and $mypassword, table row must be 1 row
 
         if($count == 1) {
-          echo("DIS BORKED 2");
            session_register("myusername");
            $_SESSION['login_user'] = $myusername;
            $conn->close();
            header("location: index.php");
         }
 
-        else {
-          echo("DIS didnt BORKED 2");
-           $error = "Your Login Name or Password is invalid";
+        else {           $error = "Your Login Name or Password is invalid";
            $conn->close();
            header("location: index.php");
         }*/
