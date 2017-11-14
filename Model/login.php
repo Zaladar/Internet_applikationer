@@ -7,7 +7,7 @@
       // username and password sent from form
         /*$myusername = mysqli_real_escape_string($conn,$_POST['username']);
         $mypassword = mysqli_real_escape_string($conn,$_POST['password']);*/
-        
+
         $sql = "SELECT username FROM user WHERE username = '$_POST['username']' and password = '$_POST['password']'";
         $result = $conn->query($sql);
         $row = $result->fetch_assoc();
@@ -31,7 +31,7 @@
            $error = "Your Login Name or Password is invalid";
            $conn->close();
            header("location: index.php");
-        }*/
+        }
    }
 
 ?>
