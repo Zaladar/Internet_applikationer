@@ -18,12 +18,11 @@
         if($count == 1) {
            session_register("myusername");
            $_SESSION['login_user'] = $myusername;
-           $conn->close();
            header("location: index.php");
         }
 
-        else {           $error = "Your Login Name or Password is invalid";
-           $conn->close();
+        else {
+          $error = "Your Login Name or Password is invalid";
            header("location: index.php");
         }*/
    }
