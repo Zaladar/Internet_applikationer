@@ -29,7 +29,7 @@
            $error = "Your Login Name or Password is invalid";
            $conn->close();
            header("location: index.php");
-        }*/
+        }//*/
    }
 
 ?>
