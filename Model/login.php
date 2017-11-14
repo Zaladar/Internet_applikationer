@@ -1,5 +1,5 @@
 <?php
-   include("config.php");
+   include("Init/config.php");
    session_start();
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
@@ -27,7 +27,7 @@
          $conn->close();
          header("location: index.php");
       }*/
-      echo("got post lol")
+      echo("got post lol");
    }
    else{echo("FUCKDIS");}
 ?>
