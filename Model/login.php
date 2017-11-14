@@ -12,10 +12,10 @@
 
         $sql = "SELECT username FROM user WHERE username = '$_POST['username']' and password = '$_POST['password']'";
         $result = $conn->query($sql);
-        $result ->num_rows;
+        $result->num_rows;
         $row = $result->fetch_assoc();
         $active = $row['active'];
-
+        echo("$result");
         $count = mysqli_num_rows($result);
         echo("DIS BORKED 1");
 
@@ -26,7 +26,6 @@
            session_register("myusername");
            $_SESSION['login_user'] = $myusername;
            $conn->close();
-           $_SESSION['lol'] = 'yes';
            header("location: index.php");
         }
 
