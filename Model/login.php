@@ -17,14 +17,14 @@
       // If result matched $myusername and $mypassword, table row must be 1 row
 
       if($count == 1) {
-          echo("DIR BORKED 2")
+          echo("DIR BORKED 2");
          session_register("myusername");
          $_SESSION['login_user'] = $myusername;
          $conn->close();
          $_SESSION['lol'] = 'yes';
          header("location: index.php");
       }else {
-          echo("DIR DIDNT BORKED 2")
+          echo("DIR DIDNT BORKED 2");
          $error = "Your Login Name or Password is invalid";
          $conn->close();
          header("location: index.php");
