@@ -4,4 +4,5 @@
   $password = "niclas91";
   $database = "site"
   $conn = new mysqli($servername, $username, $password, $database);
+  echo("dis wierd")
 ?>
