@@ -1,7 +1,6 @@
 <?php
    include 'Init/config.php';
    session_start();
-   echo("its working sortof");
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
         /*$myusername = mysqli_real_escape_string($conn,$_POST['username']);
