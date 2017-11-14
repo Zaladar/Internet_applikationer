@@ -12,7 +12,7 @@
         $result = $conn->query($sql);
         $row = $result->fetch_assoc();
         //$active = $row['active'];
-        $count = mysqli_num_rows($result);
+        $count = $result->num_rows;
         // If result matched $myusername and $mypassword, table row must be 1 row
         echo("$count");
         if($count == 1) {
