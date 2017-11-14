@@ -10,6 +10,7 @@
         //echo ("$_POST['username']");
         $sql = "SELECT username FROM user WHERE username = '$myusername' and password = '$mypassword'";
         $result = $conn->query($sql);
+        echo("$result")
         //$row = $result->fetch_assoc();
         //$active = $row['active'];
         //echo("$result");
