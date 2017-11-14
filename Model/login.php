@@ -1,10 +1,6 @@
 <?php
    include "Init/config.php";
    session_start();
-   if (mysqli_connect_errno())
-  {
-  echo ("Failed to connect to MySQL: ");
-  }
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
         /*$myusername = mysqli_real_escape_string($conn,$_POST['username']);
