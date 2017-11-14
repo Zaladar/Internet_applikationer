@@ -5,6 +5,7 @@
       <link rel="stylesheet" href="/css/stylesheet.css">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="/Script/loginclose.js"></script>
    </head>
    <body>
 
@@ -28,7 +29,8 @@
           <div class="container">
             <label></label>
             <input type="text" placeholder="Enter Username" name="uname" required>
-            <label></label>
+            <label></label>      <script src="/Script/loginclose.js"></script>
+
             <input type="password" placeholder="Enter Password" name="psw" required>
             <button type="submit">Login</button>
           </div>
@@ -54,14 +56,6 @@
           </p>
         </div>
       </div>
-      <script src="/Script/loginclose.js"></script>
-      <script>
-         var modal = document.getElementById('login');
-         window.onclick = function(event) {
-             if (event.target == modal) {
-                 modal.style.display = "none";
-             }
-           }
-       </script>
+    
    </body>
 </html>
