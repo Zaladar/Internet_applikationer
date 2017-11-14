@@ -3,8 +3,8 @@
    session_start();
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
-      echo("DIS BORKED 1");
-        /*$myusername = mysqli_real_escape_string($conn,$_POST['username']);
+        echo("DIS BORKED 1");
+        $myusername = mysqli_real_escape_string($conn,$_POST['username']);
         $mypassword = mysqli_real_escape_string($conn,$_POST['password']);
 
         $sql = "SELECT username FROM users WHERE username = '$myusername' and password = '$mypassword'";
@@ -28,7 +28,7 @@
            $error = "Your Login Name or Password is invalid";
            $conn->close();
            header("location: index.php");
-        }*/
+        }
    }
 
 ?>
