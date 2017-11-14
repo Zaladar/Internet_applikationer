@@ -10,25 +10,23 @@
         //echo ("$_POST['username']");
         $sql = "SELECT username FROM user WHERE username = '$myusername' and password = '$mypassword'";
         $result = $conn->query($sql);
-        $row = $result->fetch_assoc();
+        //$row = $result->fetch_assoc();
         //$active = $row['active'];
         $count = $result->num_rows;
-        // If result matched $myusername and $mypassword, table row must be 1 row
+
         echo("$count");
         if($count == 1) {
-          echo("DIS BORKED 2");
-           session_register("myusername");
+           //session_register("myusername");
            $_SESSION['login_user'] = $myusername;
            $conn->close();
            header("location: ../index.php");
         }
-        /*
+
         else {
-          echo("DIS didnt BORKED 2");
            $error = "Your Login Name or Password is invalid";
            $conn->close();
-           //header("location: ../index.php");
-        }//*/
+           header("location: ../index.php");
+        }
    }
 
 ?>
