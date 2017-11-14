@@ -3,7 +3,7 @@
    session_start();
    if (mysqli_connect_errno())
   {
-  echo ()"Failed to connect to MySQL: ");
+  echo ("Failed to connect to MySQL: ");
   }
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
