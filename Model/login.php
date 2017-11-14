@@ -9,7 +9,7 @@
       // username and password sent from form
         /*$myusername = mysqli_real_escape_string($conn,$_POST['username']);
         $mypassword = mysqli_real_escape_string($conn,$_POST['password']);*/
-
+        echo("$_POST['username']")
         $sql = "SELECT username FROM user WHERE username = '$_POST['username']' and password = '$_POST['password']'";
         $result = $conn->query($sql);
         $result->num_rows;
