@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php
+    <?php 
     session_start();  ?>
     <head>
       <title>Tasty recipies</title>
