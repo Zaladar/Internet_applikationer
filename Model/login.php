@@ -3,14 +3,14 @@
    session_start();
    if (mysqli_connect_errno())
   {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  echo "Failed to connect to MySQL: "
   }
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
         /*$myusername = mysqli_real_escape_string($conn,$_POST['username']);
         $mypassword = mysqli_real_escape_string($conn,$_POST['password']);*/
 
-        $sql = "SELECT username FROM site WHERE username = '$_POST['username']' and password = '$_POST['password']'";
+        $sql = "SELECT username FROM user WHERE username = '$_POST['username']' and password = '$_POST['password']'";
         $result = $conn->query($sql);
         $result ->num_rows;
         $row = $result->fetch_assoc();
