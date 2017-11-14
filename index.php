@@ -57,4 +57,3 @@
       </div>
    </body>
 </html>
-<?php if($_SESSION['lol']=='yes'){echo('hello world')} ?>
