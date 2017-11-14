@@ -1,5 +1,5 @@
 <?php
-   include("Init/config.php");
+   include"init/config.php";
    session_start();
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
