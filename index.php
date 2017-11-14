@@ -24,7 +24,7 @@
       </nav>
       <br class="clr"/>
       <div id="login" class="modal">
-        <form class="modal-content animate" action="/Method/login.php" method="post">
+        <form class="modal-content animate" action="/Model/login.php" method="post">
           <div class="container">
             <label></label>
             <input type="text" placeholder="Enter Username" name="username" required>
