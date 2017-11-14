@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <?php
   $servername = "localhost";
   $username = "root";
@@ -11,10 +9,3 @@
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
-<html>
-  <div>
-      <?php
-        echo $conn->connect_error;
-       ?>
-  </div>
-</html>

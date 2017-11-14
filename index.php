@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php 
+    <?php
     session_start();  ?>
     <head>
       <title>Tasty recipies</title>
@@ -24,7 +24,7 @@
       </nav>
       <br class="clr"/>
       <div id="login" class="modal">
-        <form class="modal-content animate" action="/Model/login.php" method="post">
+        <form class="modal-content animate" action="index.php" method="post">
           <div class="container">
             <label></label>
             <input type="text" placeholder="Enter Username" name="username" required>
