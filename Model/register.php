@@ -17,9 +17,6 @@
           $IDq = $conn->query($len);
           $ID = $IDq->num_rows;
           $ID++;
-          echo($len);
-          echo($IDq);
-          echo($myusername);
           $sql = "INSERT INTO user (ID, username, password)
                   VALUES ('$ID', '$myusername', '$mypassword')";
           $_SESSION['result'] = 'Account created';
