@@ -260,10 +260,10 @@ form {max-width: 300px;}
     padding: 7px 8px;
 
   }
-  #login{
+  #loginbtn{
     float:none;
   }
-  #logout{
+  #logoutbtn{
     float:none;
   }    if($_SESSION['is_login']==true){
       echo("is_login = true");
