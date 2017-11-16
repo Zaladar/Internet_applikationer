@@ -14,10 +14,10 @@
         //$active = $row['active'];
         $count = $result->num_rows;
 
-        echo("$count");
         if($count == 1) {
            //session_register("myusername");
            $_SESSION['login_user'] = $myusername;
+           $_SESSION['is_login'] = true;
            $conn->close();
            header("location: ../index.php");
         }

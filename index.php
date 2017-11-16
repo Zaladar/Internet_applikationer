@@ -8,6 +8,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="/Script/loginclose.js"></script>
+      <script src="/Script/isloggedin.js"></script>
     </head>
     <body>
       <header>
@@ -18,7 +19,8 @@
           <li><a class="active" href="#">Home</a></li>
           <li><a href="/View/Recipies/recipies.php">Recipies</a></li>
           <li><a href="/View/calendar.php">Calendar</a></li>
-          <li style="float:right"><a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</a></li>
+          <li id="logbtn"style="float:right"><a href="#" onclick="document.getElementById('login').style.display='block'">Login</a></li>
+          <li id="logbtn"style="float:right"><a href="/Model/logout.php">Logout</a></li>
           <!--<li style="float:right"><a href="#about">About</a></li>-->
         </ul>
       </nav>
@@ -29,7 +31,6 @@
             <label></label>
             <input type="text" placeholder="Enter Username" name="username" required>
             <label></label>      <script src="/Script/loginclose.js"></script>
-
             <input type="password" placeholder="Enter Password" name="password" required>
             <button type="submit">Login</button>
           </div>
