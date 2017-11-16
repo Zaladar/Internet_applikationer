@@ -13,11 +13,6 @@
         //$active = $row['active'];
         $count = $result->num_rows;
         if($count == 0) {
-          mysqli_free_result($result);
-          $sql = "SELECT username FROM user";
-          $result = $conn->query($sql);
-          $ID = $result->num_rows;
-          $ID++;
           $sql = "INSERT INTO user (ID, username, password)
                   VALUES ('$ID', '$myusername', '$mypassword')";
           $_SESSION['result'] = 'Account created';
@@ -30,5 +25,4 @@
            //header("location: ../index.php");
         }
    }
-
 ?>
