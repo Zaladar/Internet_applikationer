@@ -2,10 +2,6 @@
 <html lang="en">
     <?php
     session_start();
-    if($_SESSION['is_login']==true){
-      echo("is_login is true");
-    }
-    echo($_SESSION['login_user']);
     ?>
     <head>
       <title>Tasty recipies</title>
@@ -16,7 +12,6 @@
         var logchk = '<?php echo $_SESSION['is_login']; ?>';
       </script>
       <script src="/Script/loginclose.js"></script>
-
     </head>
     <body>
       <header>
