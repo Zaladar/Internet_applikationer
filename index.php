@@ -2,7 +2,6 @@
 <html lang="en">
     <?php
     session_start();
-
     if($_SESSION['is_login']==true){
       echo("is_login = true");
     }

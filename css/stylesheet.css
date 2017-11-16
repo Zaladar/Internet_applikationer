@@ -64,7 +64,7 @@ nav li a:hover:not(.active) {
   float:right;
 }
 #logoutbtn a{
-  display:none;
+  /*display:none;*/
 }
 nav .active {
     background-color: #00FF00;
@@ -261,7 +261,10 @@ form {max-width: 300px;}
   }
   #logout{
     float:none;
-  }
+  }    if($_SESSION['is_login']==true){
+      echo("is_login = true");
+    }
+    echo($_SESSION['login_user']);
   nav li button{
     padding: 7px 8px;
   }
