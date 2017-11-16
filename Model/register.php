@@ -13,8 +13,9 @@
         //$active = $row['active'];
         $count = $result->num_rows;
         if($count == 0) {
-          $len = "SELECT ID, username, password FROM user";
-          $IDq = $conn->query($len);
+          mysqli_free_result($sql);
+          $sql = "SELECT username FROM user";
+          $IDq = $conn->query($sql);
           $ID = $IDq->num_rows;
           $ID++;
           $sql = "INSERT INTO user (ID, username, password)
