@@ -15,7 +15,7 @@
 
         if($count == 0) {
           $IDq = $conn->query($len);
-          $len = "SELECT * FROM user;
+          $len = "SELECT * FROM user";
           $ID = $IDq->num_rows;
           $ID++;
           $sql = "INSERT INTO user (ID, username, password)
