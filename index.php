@@ -8,9 +8,8 @@
       <link rel="stylesheet" href="/css/stylesheet.css">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script>
-        var logchk = '<?php echo $_SESSION['is_login']; ?>';
-      </script>
+      <script> var logchk = '<?php echo $_SESSION['is_login']; ?>';</script>
+      <script src="/Script/loginclose.js"></script>
     </head>
     <body>
       <header>
@@ -28,17 +27,6 @@
         </ul>
       </nav>
       <br class="clr"/>
-      <div id="login" class="modal">
-        <form class="modal-content" action="/Model/login.php" method="post">
-          <div class="container">
-            <label></label>
-            <input type="text" placeholder="Enter Username" name="username" required>
-            <label></label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button>
-          </div>
-        </form>
-      </div>
       <div id="register" class="modal">
         <form class="modal-content" action="/Model/register.php" method="post">
           <div class="container">
@@ -47,6 +35,17 @@
             <label></label>
             <input type="password" placeholder="Enter Password" name="password" required>
             <button type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+      <div id="login" class="modal">
+        <form class="modal-content" action="/Model/login.php" method="post">
+          <div class="container">
+            <label></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button>
           </div>
         </form>
       </div>
@@ -70,7 +69,6 @@
           </p>
         </div>
       </div>
-      <script src="/Script/loginclose.js"></script>
       <script src="/Script/isloggedin.js"></script>
    </body>
 </html>
