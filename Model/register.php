@@ -23,12 +23,12 @@
                   VALUES ('$ID', '$myusername', '$mypassword')";
           $_SESSION['result'] = 'Account created';
           $conn->close();
-          header("location: ../index.php");
+          //header("location: ../index.php");
         }
         else {
            $_SESSION['result'] = "Your userame is already in use";
            $conn->close();
-           header("location: ../index.php");
+           //header("location: ../index.php");
         }
    }
 
