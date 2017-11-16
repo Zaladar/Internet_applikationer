@@ -1,7 +1,6 @@
 <?php
    include 'init/config.php';
    session_start();
-   echo("its working sortof");
 
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
@@ -19,14 +18,12 @@
            $_SESSION['login_user'] = $myusername;
            $_SESSION['is_login'] = true;
            $conn->close();
-           alert("login success!");
            header("location: ../index.php");
         }
 
         else {
            $error = "Your Login Name or Password is invalid";
            $conn->close();
-           alert("login failure!");
            header("location: ../index.php");
         }
    }
