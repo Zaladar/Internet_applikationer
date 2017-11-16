@@ -20,13 +20,13 @@
         <li><a href="/View/Recipies/recipies.php">Recipies</a></li>
         <li><a href="/View/calendar.php">Calendar</a></li>
         <li id="loginbtn"><a href="#" onclick="document.getElementById('login').style.display='block'">Login</a></li>
-        <li id="logoutbtn"><a href="/Model/logout.php">Logout</a></li>
+        <li id="logoutbtn"><a href="../../Model/logout.php">Logout</a></li>
         <!--<li style="float:right"><a href="#about">About</a></li>-->
       </ul>
     </nav>
     <br class="clr"/>
     <div id="login" class="modal">
-      <form class="modal-content animate" action="/Model/Login.php" method="post">
+      <form class="modal-content animate" action="../../Model/Login.php" method="post">
         <div class="container">
           <label></label>
           <input type="text" placeholder="Enter Username" name="uname" required>
