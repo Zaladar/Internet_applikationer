@@ -45,7 +45,7 @@ nav li a {
 nav li a:hover:not(.active) {
     background-color: #111;
 }
-/*nav li button {
+nav li button {
     background-color: #333;
     border-left: 1px solid #006400;
     display: block;
@@ -56,7 +56,7 @@ nav li a:hover:not(.active) {
     border: none;
     cursor: pointer;
     width: 100%;
-}*/
+}
 #loginbtn{
   float:right;
 }
@@ -64,9 +64,6 @@ nav li a:hover:not(.active) {
   float:right;
   display:none;
 }
-/*#logoutbtn a{
-
-}*/
 nav .active {
     background-color: #00FF00;
 }
@@ -193,7 +190,18 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
+button {
+    background-color: #333;
+    border-left: 1px solid #006400;
+    display: block;
+    color: #dc143c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
   /* Set a style for all buttons */
 /*button {
     background-color: #4CAF50;
