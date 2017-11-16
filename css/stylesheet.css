@@ -64,7 +64,7 @@ nav li a:hover:not(.active) {
   float:right;
 }
 #logoutbtn a{
-  /*display:none;*/
+  display:none;
 }
 nav .active {
     background-color: #00FF00;
