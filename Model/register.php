@@ -15,17 +15,14 @@
         if($count == 0) {
 
           $sql = "INSERT INTO user (username, password) VALUES ('$myusername', '$mypassword')";
-          if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
-          }
           $_SESSION['result'] = 'Account created';
           $conn->close();
-          //header("location: ../index.php");
+          header("location: ../index.php");
         }
         else {
            $_SESSION['result'] = "Your userame is already in use";
            $conn->close();
-           //header("location: ../index.php");
+           header("location: ../index.php");
         }
    }
 ?>
