@@ -12,12 +12,13 @@
         //$row = $result->fetch_assoc();
         //$active = $row['active'];
         $count = $result->num_rows;
-
+        echo($count);
         if($count == 0) {
           $IDq = $conn->query($len);
           $len = "SELECT * FROM user";
           $ID = $IDq->num_rows;
           $ID++;
+          echo($ID);
           $sql = "INSERT INTO user (ID, username, password)
                   VALUES ('$ID', '$myusername', '$mypassword')";
           $_SESSION['result'] = 'Account created';
