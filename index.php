@@ -9,6 +9,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script> var logchk = '<?php echo $_SESSION['is_login']; ?>';</script>
+      <script src="/Script/loginclose.js"></script>
     </head>
     <body>
       <header>
@@ -69,6 +70,6 @@
         </div>
       </div>
       <script src="/Script/isloggedin.js"></script>
-      <script src="/Script/loginclose.js"></script>
+
    </body>
 </html>
