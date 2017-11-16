@@ -17,12 +17,13 @@
            //session_register("myusername");
            $_SESSION['login_user'] = $myusername;
            $_SESSION['is_login'] = true;
+           $_SESSION['result'] = "Login sucessfull";
            $conn->close();
            header("location: ../index.php");
         }
 
         else {
-           $error = "Your Login Name or Password is invalid";
+           $_SESSION['result'] = "Login unsucessfull";
            $conn->close();
            header("location: ../index.php");
         }
