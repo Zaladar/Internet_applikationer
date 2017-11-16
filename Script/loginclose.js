@@ -1,15 +1,15 @@
 // Get the modal
-var modal1 = document.getElementById('login');
-var modal2 = document.getElementById('register');
+var login = document.getElementById('login');
+var register = document.getElementById('register');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal1) {
-        modal1.style.display = "none";
+    if (event.target == login) {
+        modal.style.display = "none";
     }
 }
 window.onclick = function(event) {
-    if (event.target == modal2) {
-        modal2.style.display = "none";
+    if (event.target == register) {
+        register.style.display = "none";
     }
 }
