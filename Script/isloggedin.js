@@ -1,6 +1,7 @@
 //alert(session); this will make an alert message pop up.
-
+var login = document.getElementById('loginbtn');
+var logout = document.getElementById('logoutbtn');
 if (logchk == true){
-    document.getElementById('loginbtn').style.display = "none";
-    document.getElementById('logoutbtn').style.display = "block";
+    login.style.display = "none";
+    logout.style.display = "block";
 }
