@@ -70,5 +70,6 @@
       </div>
       <script src="/Script/isloggedin.js"></script>
       <script src="/Script/loginclose.js"></script>
+      <script src="/Script/registerclose.js"></script>
    </body>
 </html>
