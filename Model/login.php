@@ -19,7 +19,6 @@
            $_SESSION['is_login'] = true;
            $conn->close();
            header("location: ../index.php");
-           gfsdh
         }
 
         else {

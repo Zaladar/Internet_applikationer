@@ -1,4 +1,4 @@
-var session = "<?php echo $_SESSION['is_login']? true:false; ?>";
+var session = "<?php echo $_SESSION['is_login']?'true':'false'; ?>";
 //alert(session); this will make an alert message pop up.
 var login = document.getElementById('loginbtn');
 var logout = document.getElementById('logoutbtn');
