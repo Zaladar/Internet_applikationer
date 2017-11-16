@@ -13,7 +13,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script>
-        var logchk = <?php echo $_SESSION['is_login']; ?>;
+        var logchk = '<?php echo $_SESSION['is_login']; ?>';
       </script>
       <script src="/Script/loginclose.js"></script>
       <script src="/Script/isloggedin.js"></script>
@@ -21,7 +21,6 @@
     <body>
       <header>
         <h1> Tasty Recipies</h1>
-        <div id="logchk" value="<?php $_SESSION['is_login']; ?>" style="display:none"/>
       </header>
       <nav>
         <ul>
