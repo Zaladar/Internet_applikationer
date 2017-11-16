@@ -43,7 +43,7 @@ nav li a {
 nav li a:hover:not(.active) {
     background-color: #111;
 }
-nav li button {
+/*nav li button {
     background-color: #333;
     border-left: 1px solid #006400;
     display: block;
@@ -54,7 +54,7 @@ nav li button {
     border: none;
     cursor: pointer;
     width: 100%;
-}
+}*/
 #loginbtn{
   float:right;
 }
