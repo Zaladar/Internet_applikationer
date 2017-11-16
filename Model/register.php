@@ -13,10 +13,10 @@
         //$active = $row['active'];
         $count = $result->num_rows;
         if($count == 0) {
-          mysqli_free_result($sql);
+          mysqli_free_result($result);
           $sql = "SELECT username FROM user";
-          $IDq = $conn->query($sql);
-          $ID = $IDq->num_rows;
+          $result = $conn->query($sql);
+          $ID = $result->num_rows;
           $ID++;
           $sql = "INSERT INTO user (ID, username, password)
                   VALUES ('$ID', '$myusername', '$mypassword')";
