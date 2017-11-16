@@ -20,7 +20,7 @@
           <li><a class="active" href="#">Recipies</a></li>
           <li><a href="/View/calendar.php">Calendar</a></li>
           <li id="loginbtn"><a href="#" onclick="document.getElementById('login').style.display='block'">Login</a></li>
-          <li id="logoutbtn"><a href="../../Model/logout.php">Logout</a></li>
+          <li id="logoutbtn"><a href="/Model/logout.php">Logout</a></li>
           <!--<li style="float:right"><a href="#about">About</a></li>-->
         </ul>
       </nav>
