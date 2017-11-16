@@ -13,7 +13,7 @@
         //$active = $row['active'];
         $count = $result->num_rows;
         if($count == 0) {
-          $len = "SELECT username FROM user";
+          $len = "SELECT ID, username, password FROM user";
           $IDq = $conn->query($len);
           $ID = $IDq->num_rows;
           $ID++;
