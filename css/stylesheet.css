@@ -60,6 +60,9 @@ nav li button {
 #loginbtn{
   float:right;
 }
+#regbtn{
+  float:right;
+}
 #logoutbtn{
   float:right;
   display:none;
@@ -263,12 +266,12 @@ form {max-width: 300px;}
   #loginbtn{
     float:none;
   }
+  #regbtn{
+    float:none;
+  }
   #logoutbtn{
     float:none;
-  }    if($_SESSION['is_login']==true){
-      echo("is_login = true");
-    }
-    echo($_SESSION['login_user']);
+  }
   nav li button{
     padding: 7px 8px;
   }
