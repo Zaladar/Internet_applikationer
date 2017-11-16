@@ -39,6 +39,8 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    cursor: pointer;
+
 }
 nav li a:hover:not(.active) {
     background-color: #111;
@@ -253,6 +255,12 @@ form {max-width: 300px;}
   nav li a{
     padding: 7px 8px;
 
+  }
+  #login{
+    float:none;
+  }
+  #logout{
+    float:none;
   }
   nav li button{
     padding: 7px 8px;
