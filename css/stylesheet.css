@@ -55,13 +55,13 @@ nav li button {
     cursor: pointer;
     width: 100%;
 }
-#login{
+#loginbtn{
   float:right;
 }
-#logout{
+#logoutbtn{
   float:right;
 }
-#logout a{
+#logoutbtn a{
   style:none;
 }
 nav .active {
