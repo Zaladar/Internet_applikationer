@@ -61,8 +61,9 @@ nav li button {
 #logout{
   float:right;
 }
-#logout a{display: none;}
-
+#logout a{
+  style:none;
+}
 nav .active {
     background-color: #00FF00;
 }
@@ -189,6 +190,27 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+#login{
+  float:right;
+}
+#logout{
+  float:right;
+}
+  /* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
 .container {
     padding: 16px;
 }
