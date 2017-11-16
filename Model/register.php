@@ -13,8 +13,8 @@
         //$active = $row['active'];
         $count = $result->num_rows;
         if($count == 0) {
-          $sql = "INSERT INTO user (ID, username, password)
-                  VALUES ('$ID', '$myusername', '$mypassword')";
+          $sql = "INSERT INTO user (username, password)
+                  VALUES ('$myusername', '$mypassword')";
           $_SESSION['result'] = 'Account created';
           $conn->close();
           //header("location: ../index.php");
