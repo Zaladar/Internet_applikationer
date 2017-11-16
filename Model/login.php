@@ -24,7 +24,7 @@
         else {
            $error = "Your Login Name or Password is invalid";
            $conn->close();
-           header("location: ".$_SERVER['PHP_SELF']);
+           header("location: ../index.php");
         }
    }
 
