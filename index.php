@@ -61,6 +61,6 @@
           </p>
         </div>
       </div>
-      <div id="logchk" value="<?php echo("$_SESSION['is_login']")?>" style="display:none"/>
+      <div id="logchk" value="<?php echo($_SESSION['is_login']);?>" style="display:none"/>
    </body>
 </html>
