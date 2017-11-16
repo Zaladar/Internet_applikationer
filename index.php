@@ -5,7 +5,7 @@
     if($_SESSION['is_login']==true){
       echo("is_login = true");
     }
-    echo("$_SESSION['login_user']");
+    echo($_SESSION['login_user']);
     ?>
     <head>
       <title>Tasty recipies</title>
