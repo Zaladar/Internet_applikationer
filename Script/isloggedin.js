@@ -2,7 +2,7 @@
 var loginbtn = document.getElementById('loginbtn');
 var logoutbtn = document.getElementById('logoutbtn');
 var registerbtn = document.getElementById('rebtn');
-if (logchk){
+if (logchk==true){
     loginbtn.style.display = "none";
     registerbtn.style.display = "none";
     logoutbtn.style.display = "block";

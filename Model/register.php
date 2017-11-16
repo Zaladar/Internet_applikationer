@@ -17,12 +17,12 @@
 
         if($count == 0) {
           $IDq = $conn->query($len);
-          $len = "SELECT * FROM user";
+          $len = "SELECT * FROM user;
           $ID = $IDq->num_rows;
           $ID++;
           $sql = "INSERT INTO user (ID, username, password)
                   VALUES ('$ID', '$myusername', '$mypassword')";
-          $_SESSION['result'] = "Account created";
+          $_SESSION['result'] = 'Account created';
           $conn->close();
           header("location: ../index.php");
         }
