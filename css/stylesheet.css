@@ -55,6 +55,13 @@ nav li button {
     cursor: pointer;
     width: 100%;
 }
+#login{
+  float:right;
+}
+#logout{
+  float:right;
+}
+#logout a{display: none;}
 
 nav .active {
     background-color: #00FF00;
@@ -182,14 +189,6 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-#login{
-  float:right;
-}
-#logout{
-  float:right;
-  display: none;
-}
-
 .container {
     padding: 16px;
 }
