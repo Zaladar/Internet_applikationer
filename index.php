@@ -18,7 +18,7 @@
     <body>
       <header>
         <h1> Tasty Recipies</h1>
-        <div id="logchk" value="<?php echo( $_SESSION['is_login']);?>" style="display:none"/>
+        <div id="logchk" value="<?php $_SESSION['is_login']; ?>" style="display:none"/>
       </header>
       <nav>
         <ul>
