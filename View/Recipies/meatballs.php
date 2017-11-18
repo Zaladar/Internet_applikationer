@@ -84,7 +84,7 @@
                 <label></label>
                 <input type="text" placeholder="Enter comment" name="comment" style="height 60 px" required>
                 <input type="hidden" name="recipie" value="meatballs">
-                <button type="submit">Submit</button>
+                <button class="smallbtn" type="submit">Submit</button>
               </div>
             </form>
           </div>

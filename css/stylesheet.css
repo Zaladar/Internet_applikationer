@@ -182,8 +182,14 @@ small.date{
 div.ucomment p {
   margin:0;
 }
-comm{
+#comm{
 
+}
+#smallbtn{
+  display: block;
+}
+.delete{
+ display:block;
 }
 
 /*========================= Login =========================*/
