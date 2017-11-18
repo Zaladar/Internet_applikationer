@@ -1,9 +1,10 @@
 <?php
    include 'init/config.php';
    session_start();
-
+   echo("what dis")
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
+        echo("now dis?")
         $myusername = mysqli_real_escape_string($conn,$_POST['username']);
         $mypassword = mysqli_real_escape_string($conn,$_POST['password']);
         //echo ("$_POST['username']");
@@ -12,7 +13,6 @@
         //$row = $result->fetch_assoc();
         //$active = $row['active'];
         $count = $result->num_rows;
-        echo($result);
         if($count == 0) {
 
           $sql = "INSERT INTO user (username, password) VALUES ('$myusername', '$mypassword')";
