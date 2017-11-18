@@ -10,6 +10,6 @@
         $sql = "INSERT INTO comments (username, recipie, comment) VALUES ('$myusername', '$myrecipie', '$mycomment')";
         $_SESSION['result'] = 'Account created';
         $conn->close();
-        header("location: $_POST['recipie'].php");
+        header("location: ../index.php");
    }
 ?>
