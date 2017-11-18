@@ -87,7 +87,7 @@
                 <label></label>
                 <input type="text" placeholder="Enter comment" name="comment" style="height 60 px" required>
                 <input type="hidden" name="recipie" value="meatballs">
-                <input type="hidden" name="username" value="admin">
+                <input type="hidden" name="username" value="<?php echo($_SESSION['login_user'])?>">
                 <button type="submit">Submit</button>
               </div>
             </form>
