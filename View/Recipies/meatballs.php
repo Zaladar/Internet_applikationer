@@ -65,7 +65,6 @@
         </div>
         <div class="column">
           <h3>Comments</h3>
-          insert php
           <div class="comments">
 
             <div class="ucomment">
@@ -82,11 +81,13 @@
                 <p>PO-TA-TOES! boil 'em mash 'em stick 'em in a stew</p>
             </div>
           </div>
-          <div>
-            <form class="modal-content animate" action="/Model/login.php" method="post">
-              <div class="comment">
+          <div class="comments">
+            <form class="modal-content animate" action="/Model/commentinput.php" method="post">
+              <div class="ucomment">
                 <label></label>
-                <input type="text" placeholder="Enter Username" name="username" required style="">
+                <input type="text" placeholder="Enter comment" name="comment" style="height 60 px">
+                <input type="hidden" name="recipie" value="meatballs">
+                <input type="hidden" name="username" value="<?php $_SESSION['login_user']?>">
                 <button type="submit">Submit</button>
               </div>
             </form>

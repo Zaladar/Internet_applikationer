@@ -1,21 +1,20 @@
 <?php
 include 'init/config.php';
 session_start();
-$sql = "SELECT ID, username, comment FROM comments WHERE recipie = '$myusername'";
+$sql = "SELECT ID, username, recipie, comment FROM comments WHERE recipie='meatballs'";
 $result = $conn->query($sql);
 // output data of each row
 while($row = $result->fetch_assoc()) {
   echo '<div class="comments">';
     echo '<div class="ucomment">';
-        echo '<small class="name">'$row['username']'</small>';
-        echo '<small class="date" style="display:hidden">'$row['ID']'</small><br/>';
+        echo '<small class="name">'.$row['username']'</small>';
+        if($_SESSION['login_user']== $row['username']){
+          echo() ' <form action="/Model/delete.php"><input type="hidden" name="id" value="'.$row['ID']'">
+          <button type="submit" style="float:right">Delete</button><br/>');}
         echo '<br class="clr"/>';
-        echo '<p class="comment">'$row['comment']'</p>';
-    echo'</div>'
-echo'</div>'
+        echo '<p class="comment">'.$row['comment']'</p>';
+    echo'</div>';
+echo'</div>';
 }
 $conn->close();
 ?>
-
-
-<?php
