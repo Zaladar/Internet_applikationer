@@ -26,7 +26,7 @@
     </nav>
     <br class="clr"/>
     <div id="login" class="modal">
-      <form class="modal-content animate" action="/Model/ogin.php" method="post">
+      <form class="modal-content animate" action="/Model/login.php" method="post">
         <div class="container">
           <label></label>
           <input type="text" placeholder="Enter Username" name="uname" required>
@@ -82,7 +82,7 @@
             </div>
           </div>
           <div class="comments">
-            <form class="modal-content animate" action="/Model/commentinput.php" method="post">
+            <form class="comm" action="/Model/commentinput.php" method="post">
               <div class="ucomment">
                 <label></label>
                 <input type="text" placeholder="Enter comment" name="comment" style="height 60 px">
