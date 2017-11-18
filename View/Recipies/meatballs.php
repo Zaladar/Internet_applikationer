@@ -64,8 +64,10 @@
           </ol>
         </div>
         <div class="column">
+          <h3>Comments</h3>
+          insert php
           <div class="comments">
-            <h3>Comments</h3>
+
             <div class="ucomment">
                 <small class="name">Name: Smeagoll</small>
                 <small class="date">date: 2017-11-07</small><br/>
@@ -79,6 +81,15 @@
                 <br class="clr"/>
                 <p>PO-TA-TOES! boil 'em mash 'em stick 'em in a stew</p>
             </div>
+          </div>
+          <div>
+            <form class="modal-content animate" action="/Model/login.php" method="post">
+              <div class="comment">
+                <label></label>
+                <input type="text" placeholder="Enter Username" name="username" required style="">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
