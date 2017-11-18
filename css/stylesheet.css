@@ -194,6 +194,7 @@ div.ucomment p {
  float:right;
  padding: 0px;
  margin:0px;
+ width:none;
 }
 
 /*========================= Login =========================*/
