@@ -11,6 +11,7 @@
         $result = $conn->query($sql);
         $conn->close();
         echo($_SESSION['login_user']);
-        header("location: ".$_POST['recipie'].".php");
+        echo($_POST['recipie']);
+        //header("location: ".$_POST['recipie'].".php");
    }
 ?>
