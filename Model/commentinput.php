@@ -11,7 +11,6 @@
         $result = $conn->query($sql);
         $conn->close();
         echo($_SESSION['login_user']);
-        //header("location: ../index.php");
+        header("location: ../index.php");
    }
-   $conn->close();
 ?>
