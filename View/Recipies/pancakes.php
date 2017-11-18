@@ -2,6 +2,7 @@
 <html lang="en">
     <?php
     session_start();
+    $_SESSION['pg']="pancakes";
     ?>
     <head>
       <title>Pancakes</title>
