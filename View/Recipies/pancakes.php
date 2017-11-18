@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php
+    session_start();
+    ?>
     <head>
       <title>Pancakes</title>
       <link rel="stylesheet" href="/css/stylesheet.css">
