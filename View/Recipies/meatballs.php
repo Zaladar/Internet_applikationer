@@ -77,7 +77,7 @@
         </div>
         <div class="column">
           <h3>Comments</h3>
-          <?php include '/home/achenar/Documents/Internet_Applikationer/Model/comment.php'; ?>
+          <?php include '../../Model/comment.php'; ?>
           <div class="comments">
             <form class="comm" action="/Model/commentinput.php" method="post">
               <div class="ucomment">
