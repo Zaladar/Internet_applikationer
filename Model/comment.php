@@ -12,7 +12,7 @@ while($row = $result->fetch_assoc()) {
   if($_SESSION['login_user']== $row['username']){
     echo(' <form action="/Model/delete.php">
     <input type="hidden" name="id" value="'.$row['ID'].'">
-    <button type="submit" class="delete">Delete</button></form><br/>');}
+    <button type="submit" class="delete">&#9851</button></form><br/>');}
   echo '<br class="clr"/>';
   echo ('<p class="comment">'.$row['comment'].'</p>');
   echo'</div>';
