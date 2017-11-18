@@ -13,6 +13,7 @@
         //$row = $result->fetch_assoc();
         //$active = $row['active'];
         $count = $result->num_rows;
+        echo ($count);
         if($count == 0) {
 
           $sql = "INSERT INTO user (username, password) VALUES ('$myusername', '$mypassword')";
