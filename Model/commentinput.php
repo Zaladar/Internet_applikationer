@@ -13,4 +13,5 @@
         echo($_SESSION['login_user']);
         //header("location: ../index.php");
    }
+   $conn->close();
 ?>
