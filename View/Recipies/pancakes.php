@@ -2,7 +2,6 @@
 <html lang="en">
     <?php
     session_start();
-    $_SESSION["pg"]="pancakes";
     ?>
     <head>
       <title>Pancakes</title>
@@ -76,7 +75,7 @@
         </div>
         <div class="column">
           <h3>Comments</h3>
-          <?php include '../../Model/comment.php'; ?>
+          <?php include '../../Model/commentpc.php'; ?>
           <div class="comments">
             <form class="comm" action="/Model/commentinput.php" method="post">
               <div class="ucomment">

@@ -2,7 +2,6 @@
 <html lang="en">
     <?php
     session_start();
-    $_SESSION["pg"]="meatballs";
     ?>
     <head>
       <title>Meatballs</title>
@@ -77,7 +76,7 @@
         </div>
         <div class="column">
           <h3>Comments</h3>
-          <?php include '../../Model/comment.php'; ?>
+          <?php include '../../Model/commentmb.php'; ?>
           <div class="comments">
             <form class="comm" action="/Model/commentinput.php" method="post">
               <div class="ucomment">

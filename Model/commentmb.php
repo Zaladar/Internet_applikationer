@@ -1,7 +1,7 @@
 <?php
 include 'init/config.php';
 session_start();
-$sql = "SELECT ID, username, recipie, comment FROM comments WHERE recipie='$_SESSION['pg']'";
+$sql = "SELECT ID, username, recipie, comment FROM comments WHERE recipie='meatballs'";
 $result = $conn->query($sql);
 // output data of each row
 
