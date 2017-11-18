@@ -8,8 +8,8 @@
         $myrecipie = mysqli_real_escape_string($conn,$_POST['recipie']);
         $mycomment = mysqli_real_escape_string($conn,$_POST['comment']);
         $sql = "INSERT INTO comments (username, recipie, comment) VALUES ('$myusername', '$myrecipie', '$mycomment')";
-        $_SESSION['result'] = 'Account created';
         $conn->close();
-        header("location: ../index.php");
+        echo($_SESSION['login_user'])
+        //header("location: ../index.php");
    }
 ?>
