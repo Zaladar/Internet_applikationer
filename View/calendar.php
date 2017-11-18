@@ -8,6 +8,7 @@
       <script>
         var logchk = '<?php echo $_SESSION['is_login']; ?>';
       </script>
+      <script src="/Script/isloggedin.js"></script>
       <script src="/Script/loginclose.js"></script>
    </head>
    <body>
@@ -19,24 +20,35 @@
           <li><a href="/index.php">Home</a></li>
           <li><a href="/View/Recipies/recipies.php">Recipies</a></li>
           <li><a class="active" href="#">Calendar</a></li>
+          <li id="regbtn"><a href="#" onclick="document.getElementById('register').style.display='block'">Register</a></li>
           <li id="loginbtn"><a href="#" onclick="document.getElementById('login').style.display='block'">Login</a></li>
           <li id="logoutbtn"><a href="/Model/logout.php">Logout</a></li>
           <!--<li style="float:right"><a href="#about">About</a></li>-->
         </ul>
-        <br class="clr"/>
-    </nav>
-    <div id="login" class="modal">
-      <form class="modal-content animate" action="/Model/login.php" method="post">
-        <div class="container">
-          <label></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-          <label></label>      <script src="/Script/loginclose.js"></script>
-
-          <input type="password" placeholder="Enter Password" name="psw" required>
-          <button type="submit">Login</button>
-        </div>
-      </form>
-    </div>
+      </nav>
+      <br class="clr"/>
+      <div id="register" class="modal">
+        <form class="modal-content animate" action="/Model/register.php" method="post">
+          <div class="container">
+            <label></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+      <div id="login" class="modal">
+        <form class="modal-content animate" action="/Model/login.php" method="post">
+          <div class="container">
+            <label></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </div>
       <div style="width: 100%">
       <div class="month">
          <ul>
