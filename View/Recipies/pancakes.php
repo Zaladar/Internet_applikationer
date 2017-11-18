@@ -5,9 +5,7 @@
       <link rel="stylesheet" href="/css/stylesheet.css">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script>
-        var logchk = '<?php echo $_SESSION['is_login']; ?>';
-      </script>
+      <script>var logchk = '<?php echo $_SESSION['is_login']; ?>';</script>
    </head>
    <body>
     <header>
