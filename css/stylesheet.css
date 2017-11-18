@@ -187,9 +187,13 @@ div.ucomment p {
 }
 #smallbtn{
   display: block;
+  padding: 4px;
 }
 .delete{
  display:block;
+ float:right;
+ padding: 0px;
+ margin:0px;
 }
 
 /*========================= Login =========================*/
