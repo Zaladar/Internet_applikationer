@@ -4,7 +4,7 @@ session_start();
 $sql = "SELECT ID, username, recipie, comment FROM comments WHERE recipie='meatballs'";
 $result = $conn->query($sql);
 // output data of each row
-echo("hello")
+echo("hello");
 while($row = $result->fetch_assoc()) {
   echo '<div class="comments">';
     echo '<div class="ucomment">';
