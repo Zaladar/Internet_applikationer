@@ -77,22 +77,7 @@
         </div>
         <div class="column">
           <h3>Comments</h3>
-          <div class="comments">
-
-            <div class="ucomment">
-                <small class="name">Name: Smeagoll</small>
-                <small class="date">date: 2017-11-07</small><br/>
-                <p>What's taters.. Precious?</p>
-            </div>
-          </div>
-          <div class="comments">
-            <div class="ucomment">
-                <small class="name">Name: Sam</small>
-                <small class="date">date: 2017-11-09</small><br/>
-                <br class="clr"/>
-                <p>PO-TA-TOES! boil 'em mash 'em stick 'em in a stew</p>
-            </div>
-          </div>
+          <?php include /Model/comment.php ?>
           <div class="comments">
             <form class="comm" action="/Model/commentinput.php" method="post">
               <div class="ucomment">
