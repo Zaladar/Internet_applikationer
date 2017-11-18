@@ -63,19 +63,17 @@
           </ol>
         </div>
         <div class="column">
+          <h3>Comments</h3>
+          <?php include '../../Model/comment.php'; ?>
           <div class="comments">
-            <h3>Comments</h3>
-            <div class="ucomment">
-                <small><?php  ?></small></small><small>date: 2017-11-07</small><br/>
-                <p>I wants it precious!</p>
-            </div>
-          </div>
-          <div class="comments">
-            <div class="ucomment">
-                <small>Name: Deagol</small>
-                <small style="text-align:right">date: 2017-11-09</small><br/>
-                <p>It's mine I found it!</p>
-            </div>
+            <form class="comm" action="/Model/commentinput.php" method="post">
+              <div class="ucomment">
+                <label></label>
+                <input type="text" placeholder="Enter comment" name="comment" style="height 60 px" required>
+                <input type="hidden" name="recipie" value="pancakes">
+                <button id="smallbtn" type="submit">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
