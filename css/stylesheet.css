@@ -187,14 +187,15 @@ div.ucomment p {
 }
 #smallbtn{
   display: block;
-  padding: 4px;
+  padding: 4px 8px;
+  width:unset;
 }
 .delete{
  display:block;
  float:right;
- padding: 0px;
+ padding: 4px 8px;
  margin:0px;
- width:none;
+ width:unset;
 }
 
 /*========================= Login =========================*/

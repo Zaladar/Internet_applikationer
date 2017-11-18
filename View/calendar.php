@@ -8,8 +8,6 @@
       <script>
         var logchk = '<?php echo $_SESSION['is_login']; ?>';
       </script>
-      <script src="/Script/isloggedin.js"></script>
-      <script src="/Script/loginclose.js"></script>
    </head>
    <body>
      <header>
@@ -123,6 +121,7 @@
         <br class="clr"/>
       </div>
     </div>
+    <script src="/Script/loginclose.js"></script>
     <script src="/Script/isloggedin.js"></script>
   </body>
 </html>
