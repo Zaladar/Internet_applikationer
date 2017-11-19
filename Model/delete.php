@@ -4,7 +4,7 @@ session_start();
 echo("success!");
 if($_SERVER["REQUEST_METHOD"] == "POST") {
   echo "AGAIN!";
-  $myid = mysqli_real_escape_string($conn,$_SESSION['id']);
+  $myid = mysqli_real_escape_string($conn,$_POST['id']);
   $sql = "DELETE FROM comments WHERE ID='$myid";
   echo($myid);
   $conn->query($sql);
