@@ -18,6 +18,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   echo($myid);
   $result =$conn->query($sql);
   $conn->close();
-  //header("location: ../View/Recipies/".$_POST['recipie'].".php");
+  header("location: ../View/Recipies/".$_POST['recipie'].".php");
 }
  ?>
