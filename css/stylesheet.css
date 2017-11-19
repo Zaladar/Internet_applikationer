@@ -183,7 +183,7 @@ div.ucomment p {
   margin:0;
 }
 #comm{
-
+  display:none;
 }
 #smallbtn{
   display: block;
