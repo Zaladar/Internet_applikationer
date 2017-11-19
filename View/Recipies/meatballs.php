@@ -78,7 +78,7 @@
           <h3>Comments</h3>
           <?php include '../../Model/commentmb.php'; ?>
           <div class="comments">
-            <form class="comm" action="/Model/commentinput.php" method="post">
+            <form id="comm" action="/Model/commentinput.php" method="post">
               <div class="ucomment">
                 <label></label>
                 <input type="text" placeholder="Enter comment" name="comment" style="height 60 px" required>
