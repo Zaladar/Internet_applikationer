@@ -10,6 +10,7 @@
         $this->load->view('pages/'.$page, $data);
         $this->load->view('templates/footer');
       }
+      
 /*
   		public function calendar(){
         $this->load->view('header');
