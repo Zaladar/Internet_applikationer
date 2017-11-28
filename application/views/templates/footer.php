@@ -1,4 +1,4 @@
-    <script src="/Script/loginclose.js"></script>
-    <script src="/Script/isloggedin.js"></script>
+    <script src="/js/loginclose.js"></script>
+    <script src="/js/isloggedin.js"></script>
   </body>
 </html>
