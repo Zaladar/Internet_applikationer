@@ -31,3 +31,5 @@
         $this->load->view('pancakes');
         $this->load->view('footer');
       }
+    }
+    ?>
