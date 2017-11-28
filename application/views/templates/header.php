@@ -5,7 +5,7 @@
     ?>
     <head>
       <title>Tasty recipies</title>
-      <link rel="stylesheet" href="/css/stylesheet.css">
+      <!--<link rel="stylesheet" href="/css/stylesheet.css">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script> var logchk = '<?php echo $_SESSION['is_login']; ?>';</script>
@@ -21,9 +21,9 @@
           <li><a href="/View/calendar.php">Calendar</a></li>
           <li id="regbtn"><a href="#" onclick="document.getElementById('register').style.display='block'">Register</a></li>
           <li id="loginbtn"><a href="#" onclick="document.getElementById('login').style.display='block'">Login</a></li>
-          <li id="logoutbtn"><a href="/Model/logout.php">Logout</a></li>
+          <li id="logoutbtn"><a href="/Model/logout.php">Logout</a></li>-->
           <!--<li style="float:right"><a href="#about">About</a></li>-->
-        </ul>
+        <!--</ul>
       </nav>
       <br class="clr"/>
       <div id="register" class="modal">
@@ -109,3 +109,5 @@
         echo form_close(); ?>
         </div>
       </div>
+-->
+<body>
