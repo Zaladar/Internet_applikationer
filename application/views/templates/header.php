@@ -9,7 +9,7 @@
     </header>
     <nav>
       <ul>
-        <li><a class="active" href="<?php echo base_url();?>/home">Home</a></li>
+        <li><a class="active" href="#">Home</a></li>
         <li><a href="/View/Recipies/recipies.php">Recipies</a></li>
         <li><a href="/View/calendar.php">Calendar</a></li>
         <li id="regbtn"><a href="#" onclick="document.getElementById('register').style.display='block'">Register</a></li>
