@@ -13,26 +13,5 @@
         $this->load->view('pages/'.$page, $data);
         $this->load->view('templates/footer', $data);
       }
-/*
-  		public function calendar(){
-        $this->load->view('header');
-        $this->load->view('calendar');
-        $this->load->view('footer');
-      }
-      public function recipies(){
-        $this->load->view('header');
-        $this->load->view('recipies');
-        $this->load->view('footer');
-      }
-      public function meatballs(){
-        $this->load->view('header');
-        $this->load->view('meatballs');
-        $this->load->view('footer');
-      }
-      public function meatballs(){
-        $this->load->view('header');
-        $this->load->view('pancakes');
-        $this->load->view('footer');
-      }*/
 }
 ?>
