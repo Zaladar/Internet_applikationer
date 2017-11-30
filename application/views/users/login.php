@@ -1,12 +1,15 @@
-<h2><?= $title?></h2>
-<div id="login" class="modal">
-  <?php echo form_open('Users/login', 'class="modal-content animate"' ); ?>
-    <div class="container">
-        <label></label>
-        <input type="text" placeholder="Enter Username" name="username" required autofocus>
-        <label></label>
-        <input type="password" placeholder="Enter Password" name="password" required autofocus>
-      <button type="submit">Login</button>
-    </div>
-  <?php echo form_close(); ?>
-</div>
+
+<?php echo form_open('users/login'); ?>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<h1 class="text-center"><?php echo $title; ?></h1>
+			<div class="form-group">
+				<input type="text" name="username" class="form-control" placeholder="Enter Username" required autofocus>
+			</div>
+			<div class="form-group">
+				<input type="password" name="password" class="form-control" placeholder="Enter Password" required autofocus>
+			</div>
+			<button type="submit" class="btn btn-primary btn-block">Login</button>
+		</div>
+	</div>
+<?php echo form_close(); ?>
