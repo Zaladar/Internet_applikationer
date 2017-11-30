@@ -10,7 +10,7 @@
         if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
         {
                 // Whoops, we don't have a page for that!
-                echo "hello world!";
+                echo (APPPATH.'views/pages/'.$page.'.php');
                 show_404();
         }
 
