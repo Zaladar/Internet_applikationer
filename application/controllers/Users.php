@@ -17,7 +17,7 @@ class Users extends CI_Controller{
       $this->user_model->register($hash);
       // Set message
       $this->session->set_flashdata('user_registered', 'You are now registered and can log in');
-      redirect(echo base_url());
+      redirect('home');
     }
   }
   // Log in user
