@@ -7,7 +7,6 @@
 		public function register($hash){
 			// User data array
 			$data = array(
-				'name' => $this->input->post('name'),
         'username' => $this->input->post('username'),
         'password' => $hash,
 			);
