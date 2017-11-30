@@ -15,7 +15,7 @@
 			// Validate
 			$this->db->where('username', $username);
 			$result = $this->db->get('user');
-      $row = $result->$row()
+      $row = $result->$row();
       if(password_verify($password,$row['password'])&&$result->num_rows() == 1){
   				return $result->row(0)->ID;
 			}
