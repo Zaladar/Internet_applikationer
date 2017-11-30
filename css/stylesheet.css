@@ -65,7 +65,6 @@ nav li button {
 }
 #logoutbtn{
   float:right;
-  display:none;
 }
 nav .active {
     background-color: #00FF00;
