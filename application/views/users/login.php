@@ -1,5 +1,5 @@
+<h2><?= $title?></h2>
 <div id="login" class="modal">
-  <h2><?= $title?></h2>
   <?php echo form_open('Users/login', 'class="modal-content animate"' ); ?>
     <div class="container">
         <label></label>
