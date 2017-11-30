@@ -9,7 +9,7 @@
     </header>
     <nav>
       <ul>
-        <li><a class="active" href="<?php echo base_url();?>">Home</a></li>
+        <li class="active"><a  href="<?php echo base_url();?>">Home</a></li>
         <li><a href="<?php echo base_url();?>recipes">Recipes</a></li>
         <li><a href="<?php echo base_url();?>calendar">Calendar</a></li>
         <?php if(!$this->session->userdata('logged_in')) : ?>
