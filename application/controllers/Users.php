@@ -62,7 +62,7 @@ class Users extends CI_Controller{
     $this->session->unset_userdata('username');
     // Set message
     $this->session->set_flashdata('user_loggedout', 'You are now logged out');
-    redirect('users/login');
+    redirect('index.php/users/login');
   }
   // Check if username exists
   public function check_username_exists($username){
