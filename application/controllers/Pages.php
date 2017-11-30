@@ -3,7 +3,7 @@
       public function __construct() {
         //Load helper and library.
         parent::__construct();
-        $this->load->helper('url');
+        //$this->load->helper('url');
       }
       public function view($page = 'home'){
         echo (APPPATH.'views/pages/'.$page.'.php');
