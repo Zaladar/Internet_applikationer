@@ -14,7 +14,7 @@
         <li><a href="<?php echo base_url();?>index.php/calendar">Calendar</a></li>
         <?php if(!$this->session->userdata('logged_in')) : ?>
           <li id="regbtn"><a href="<?php echo base_url(); ?>users/register">Register</a></li>
-          <li id="loginbtn"><a href="<?php echo base_url(); ?>index.php/users/login">Login</a></li>
+          <li id="loginbtn"><a href="<?php echo base_url(); ?>users/login">Login</a></li>
         <?php endif; ?>
         <?php if($this->session->userdata('logged_in')) : ?>
           <li id="logoutbtn"><a href="<?php echo base_url(); ?>index.php/users/logout">Logout</a></li>
