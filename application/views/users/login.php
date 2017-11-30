@@ -1,5 +1,3 @@
-<h2><?= $title?></h2>
-<div id="login" class="modal">
   <?php echo form_open('users/login', 'class="modal-content animate"' ); ?>
     <div class="container">
         <label></label>
@@ -9,4 +7,3 @@
       <button type="submit">Login</button>
     </div>
   <?php echo form_close(); ?>
-</div>
