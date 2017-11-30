@@ -1,6 +1,6 @@
 <html>
   <head>
-      <title>hello world</title>
+      <title>Tasty Recipes</title>
       <link rel = "stylesheet" type = "text/css" href = "/css/stylesheet.css">
   </head>
   <body>
