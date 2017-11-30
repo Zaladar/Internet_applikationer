@@ -1,6 +1,6 @@
 <div id="login" class="modal">
-  <h2><?= $title?></h2>
   <?php echo form_open('Users/login', 'class="modal-content animate"' ); ?>
+    <h2><?= $title?></h2>
     <div class="container">
         <label></label>
         <input type="text" placeholder="Enter Username" name="username" required autofocus>
