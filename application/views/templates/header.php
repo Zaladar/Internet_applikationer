@@ -13,11 +13,11 @@
         <li><a href="<?php echo base_url();?>index.php/recipes">Recipes</a></li>
         <li><a href="<?php echo base_url();?>index.php/calendar">Calendar</a></li>
         <?php if(!$this->session->userdata('logged_in')) : ?>
-          <li><a href="<?php echo base_url(); ?>index.php/users/login">Login</a></li>
-          <li><a href="<?php echo base_url(); ?>index.php/users/register">Register</a></li>
+          <li id="loginbtn"><a href="<?php echo base_url(); ?>index.php/users/login">Login</a></li>
+          <li id="regbtn"><a href="<?php echo base_url(); ?>index.php/users/register">Register</a></li>
         <?php endif; ?>
         <?php if($this->session->userdata('logged_in')) : ?>
-          <li><a href="<?php echo base_url(); ?>index.php/users/logout">Logout</a></li>
+          <li id="logoutbtn"><a href="<?php echo base_url(); ?>index.php/users/logout">Logout</a></li>
         <?php endif; ?>
       </ul>
     </nav>
