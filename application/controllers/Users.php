@@ -7,6 +7,7 @@ class Users extends CI_Controller{
     $this->form_validation->set_rules('username', 'Username', 'required|callback_check_username_exists');
     $this->form_validation->set_rules('password', 'Password', 'required');
     if($this->form_validation->run() === FALSE){
+      echo "WHATz";
       $this->load->view('templates/header');
       $this->load->view('users/register', $data);
       $this->load->view('templates/footer');
@@ -50,7 +51,7 @@ class Users extends CI_Controller{
       } else {
         // Set message
         $this->session->set_flashdata('login_failed', 'Login is invalid');
-        redirect('users/login');
+        redirect('index.php/users/login');
       }
     }
   }
