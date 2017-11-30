@@ -1,10 +1,5 @@
 <?php
 class Users extends CI_Controller{
-  public function __construct() {
-    //Load helper and library.
-    parent::__construct();
-    //$this->load->helper('url');
-  }
   // Register user
   public function register(){
     $data['title'] = 'Registration';
