@@ -1,5 +1,9 @@
 <?php
 	class User_model extends CI_Model{
+		public function __construct()
+		{
+						$this->load->database();
+		}
 		public function register($hash){
 			// User data array
 			$data = array(
@@ -23,11 +27,8 @@
 		}
 		// Check username exists
 		public function check_username_exists($username){
-			$this->db->where('username', $username);
-			$result = $this->db->get('user');
-
-			
-			if(empty($result->row_array())){
+			$query = $this->db->get_where('user', array('username' => $username));
+			if(empty($query->row_array())){
 				return true;
 			} else {
 				return false;

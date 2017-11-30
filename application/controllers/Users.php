@@ -1,5 +1,6 @@
 <?php
 class Users extends CI_Controller{
+  
   // Register user
   public function register(){
     $data['title'] = 'Registration';
