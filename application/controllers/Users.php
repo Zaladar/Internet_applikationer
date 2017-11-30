@@ -7,8 +7,9 @@ class Users extends CI_Controller{
     $this->form_validation->set_rules('username', 'Username', 'required|callback_check_username_exists');
     $this->form_validation->set_rules('password', 'Password', 'required');
     if($this->form_validation->run() === FALSE){
+      echo "WHAT"
       $this->load->view('templates/header');
-      $this->load->view('Users/register', $data);
+      $this->load->view('users/register', $data);
       $this->load->view('templates/footer');
     } else {
       // Encrypt password
@@ -26,7 +27,7 @@ class Users extends CI_Controller{
     $this->form_validation->set_rules('password', 'Password', 'required');
     if($this->form_validation->run() === FALSE){
       $this->load->view('templates/header');
-      $this->load->view('Users/login', $data);
+      $this->load->view('users/login', $data);
       $this->load->view('templates/footer');
     } else {
 
