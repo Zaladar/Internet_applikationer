@@ -7,7 +7,7 @@ class Recipe_model extends CI_Model {
         }
         public function get_comments($recipe){
           $query = $this->db->get_where('comments', array('recipe' => $recipe));
-          return $query->results_array();
+          return $query->result_array();
         }
         public function del_comment($ID){
           $this->db->delete('mytable', array('ID' => $ID));
