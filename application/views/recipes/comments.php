@@ -2,7 +2,6 @@
 
 
   <h3>Comments</h3>
-  <?php //copy this?>
   <?php foreach($comments as $comment) : ?>
   <div class="comments ">
     <div class="ucomment">
@@ -23,6 +22,7 @@
       <p class="comment"> <?php echo $comment['comment']; ?> </p>
     </div>
   </div>
+  <?php endforeach; ?>
   <div class="comments">
     <?php echo form_open('recipes/create', 'class="modal-content animate"' ); ?>
     <form id="comm">
