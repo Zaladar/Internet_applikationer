@@ -29,7 +29,7 @@
       <div class="ucomment">
         <label></label>
         <input class="comment" type="text" placeholder="Enter comment" name="comment" required autofocus>
-        <input type="hidden" name="recipe" value="<?php echo $data['recipe']; ?>">
+        <input type="hidden" name="recipe" value="<?php echo $recipe; ?>">
         <button id="smallbtn" type="submit">Submit</button>
       </div>
     </form>

@@ -10,7 +10,7 @@ class Recipe_model extends CI_Model {
           return $query->result_array();
         }
         public function del_comment($ID){
-          $this->db->delete('mytable', array('ID' => $ID));
+          $this->db->delete('comments', array('ID' => $ID));
         }
 
         /*class Post_model extends CI_Model{

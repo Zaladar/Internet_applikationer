@@ -32,7 +32,7 @@
 
         $this->load->view('templates/header', $data);
         $this->load->view('recipes/'.$page, $data);
-        $this->load->view('recipes/comments',$data);
+        $this->load->view('recipes/comments', $data);
         $this->load->view('templates/footer', $data);
       }
 

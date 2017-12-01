@@ -32,7 +32,7 @@ class Users extends CI_Controller{
 
       // Get username
       $username = $this->input->post('username');
-      // Get and encrypt the password pass un encrypted!!! not with md5
+      //get let model handle ocmpare
       $password = $this->input->post('password');
       // Login user
       $ID = $this->user_model->login($username, $password);
