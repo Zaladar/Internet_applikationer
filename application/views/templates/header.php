@@ -21,3 +21,4 @@
         <?php endif; ?>
       </ul>
     </nav>
+    <br class="clr"/>

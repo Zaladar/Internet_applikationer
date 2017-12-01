@@ -35,11 +35,11 @@ class Users extends CI_Controller{
       // Get and encrypt the password pass un encrypted!!! not with md5
       $password = $this->input->post('password');
       // Login user
-      $user_id = $this->user_model->login($username, $password);
-      if($user_id){
+      $ID = $this->user_model->login($username, $password);
+      if($ID){
         // Create session
         $user_data = array(
-          'ID' => $user_id,
+          'ID' => $ID,
           'username' => $username,
           'logged_in' => true
         );
@@ -58,7 +58,7 @@ class Users extends CI_Controller{
   public function logout(){
     // Unset user data
     $this->session->unset_userdata('logged_in');
-    $this->session->unset_userdata('user_id');
+    $this->session->unset_userdata('ID');
     $this->session->unset_userdata('username');
     // Set message
     $this->session->set_flashdata('user_loggedout', 'You are now logged out');
