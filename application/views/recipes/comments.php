@@ -7,7 +7,9 @@
   <div class="comments ">
     <div class="ucomment">
       <small class="name"> <?php echo $comment['username'] ?> </small>
-        <?php if($this->session->userdata('logged_in')&&(if($data['username']==$comment['username']))) : ?>
+
+        <?php if(($this->session->userdata('logged_in'))&&(if($data['username']==$comment['username']))) : ?>
+
         <div class="comments ">
           <div class="ucomment">
             <?php echo form_open('users/login', 'class="modal-content animate"' ); ?>
