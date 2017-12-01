@@ -175,6 +175,8 @@ input.comments{
 }
 small.name{
   float: left;
+  width: 100%;
+  height: 30px;
 }
 small.date{
   float: right;
@@ -196,7 +198,8 @@ div.ucomment p {
  float:right;
  padding: 4px 8px;
  margin:0px;
- width:unset;
+ width: 30,5px;
+ height: 30,5px;
 }
 
 /*========================= Login / Registration =========================*/
