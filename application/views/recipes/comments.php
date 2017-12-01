@@ -6,7 +6,7 @@
   <div class="comments ">
     <div class="ucomment">
       <small class="name"> <?php echo $comment['username']; ?> </small>
-        <?php if( ($this->session->userdata('logged_in'))&&($username==$comment['username'])) : ?>
+        <?php if( ($this->session->userdata('logged_in'))&&($this->session->userdata('username')==$comment['username'])) : ?>
         <div class="comments ">
           <div class="ucomment">
             <?php echo form_open('recipes/delete'); ?>
@@ -23,7 +23,7 @@
     </div>
   </div>
   <?php endforeach; ?>
-  <?php if($this->session->userdata('logged_in')) : ?>
+  <?php if($this->session->userdata('logged_in')): ?>
   <div class="comments">
     <?php echo form_open('recipes/create', 'class="modal-content animate"' ); ?>
     <form id="comm">
