@@ -2,7 +2,7 @@
   <div class="row">
     <h2>Meatballs!</h2>
     <div class="column">
-      <img style="max-width:100%" src="/Images/meatballs.jpg" alt="Meatballs">
+      <img style="max-width:100%" href="/Images/meatballs" alt="Meatballs">
     </div>
     <div class="column">
       <h3>Ingredients</h3>
