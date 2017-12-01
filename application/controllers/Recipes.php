@@ -19,14 +19,15 @@
       }
 
       public function view($page = 'index'){
-        if ( ! file_exists(APPPATH.'views/recipe/'.$page.'.php'))
+        //if (file_exists(APPPATH.'views/recipe/'.$page.'.php'))
+        $data['title'] = ucfirst($page); // Capitalize the first letter
+        $data['comments'] = $this->recipe_model->get_comments($page);
+
+        if ( ! file_exists(APPPATH.'views/recipes/'.$page.'.php'))
         {
                 // Whoops, we don't have a page for that!
                 show_404();
         }
-        //if (file_exists(APPPATH.'views/recipe/'.$page.'.php'))
-        $data['title'] = ucfirst($page); // Capitalize the first letter
-        $data['comments'] = $this->recipe_model->get_comments($page);
 
         $this->load->view('templates/header', $data);
         $this->load->view('recipes/'.$page, $data);
