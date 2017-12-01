@@ -14,7 +14,7 @@ class Comments_model extends CI_Model {
           $this->db->delete('mytable', array('ID' => $ID));
         }
 
-        class Post_model extends CI_Model{
+        /*class Post_model extends CI_Model{
       		public function __construct(){
       			$this->load->database();
       		}
@@ -46,5 +46,6 @@ class Comments_model extends CI_Model {
       			$this->db->where('id', $id);
       			$this->db->delete('posts');
       			return true;
-      		}
+      		}*/
 }
+?>
