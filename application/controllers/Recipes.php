@@ -22,7 +22,7 @@
         //if (file_exists(APPPATH.'views/recipe/'.$page.'.php'))
         $data['title'] = ucfirst($page); // Capitalize the first letter
         $data['comments'] = $this->recipe_model->get_comments($page);
-        $DATA['recipe'] = $page;
+        $data['recipe'] = $page;
 
         if ( ! file_exists(APPPATH.'views/recipes/'.$page.'.php'))
         {
