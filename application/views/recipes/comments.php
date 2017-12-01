@@ -5,7 +5,7 @@
   <?php foreach($comments as $comment) : ?>
   <div class="comments ">
     <div class="ucomment">
-      <small class="name"> <?php echo $comment['username'] ?> </small>
+      <small class="name"> <?php echo $comment['username']; ?> </small>
         <?php if( ($this->session->userdata('logged_in'))&&($data['username']==$comment['username'])) : ?>
         <div class="comments ">
           <div class="ucomment">
@@ -29,7 +29,7 @@
       <div class="ucomment">
         <label></label>
         <input class="comment" type="text" placeholder="Enter comment" name="comment" required autofocus>
-        <input type="hidden" name="recipe" value="<?php echo $data['recipe'] ?>">
+        <input type="hidden" name="recipe" value="<?php echo $data['recipe']; ?>">
         <button id="smallbtn" type="submit">Submit</button>
       </div>
     </form>
