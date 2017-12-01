@@ -23,7 +23,7 @@
     </div>
   </div>
   <?php endforeach; ?>
-  <?php if($this->session->userdata('logged_in')); ?>
+  <?php if($this->session->userdata('logged_in')) : ?>
   <div class="comments">
     <?php echo form_open('recipes/create', 'class="modal-content animate"' ); ?>
     <form id="comm">
