@@ -1,5 +1,5 @@
 
-<?php echo validation_errors(); ?>
+
 
 <?php echo form_open('users/register'); ?>
 	<div class="container">
