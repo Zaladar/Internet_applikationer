@@ -20,7 +20,7 @@
 
       public function view($page = 'index'){
         $data['title'] = ucfirst($page); // Capitalize the first letter
-        $data['comments'] = $this->recipe_model->get_comments($recipe);
+        $data['comments'] = $this->recipe_model->get_comments($page);
 
         $this->load->view('templates/header', $data);
         $this->load->view('recipes/'.$page, $data);
