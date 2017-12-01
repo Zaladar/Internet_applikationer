@@ -1,7 +1,7 @@
 
 
 
-<?php echo form_open('users/register'); ?>
+<?php echo form_open('users/register', 'class="modal-content animate"'); ?>
 	<div class="container">
 		<h1 class="text-center"><?= $title; ?></h1>
 	  <label></label>
