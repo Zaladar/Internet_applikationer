@@ -18,7 +18,7 @@
         $this->load->view('templates/footer');
       }
 
-      public function view($page){
+      public function view($page = 'index'){
         $data['title'] = ucfirst($page); // Capitalize the first letter
         $data['comments'] = $this->recipe_model->get_comments($recipe);
 
