@@ -50,7 +50,7 @@ class Users extends CI_Controller{
       } else {
         // Set message
         $this->session->set_flashdata('login_failed', 'Login is invalid');
-        redirect('index.php/users/login');
+        redirect('users/login');
       }
     }
   }
