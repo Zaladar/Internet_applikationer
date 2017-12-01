@@ -24,7 +24,7 @@
 
         $this->load->view('templates/header', $data);
         $this->load->view('recipes/'.$page, $data);
-        $this->load->view('recipes/comments',$data)
+        $this->load->view('recipes/comments',$data);
         $this->load->view('templates/footer', $data);
       }
 
@@ -42,7 +42,7 @@
       			$this->load->view('templates/header');
       			$this->load->view('posts/index', $data);
       			$this->load->view('templates/footer');
-      		}*/
+      		}*//*
       		public function view($slug = NULL){
       			$data['post'] = $this->post_model->get_posts($slug);
       			$post_id = $data['post']['id'];
@@ -100,6 +100,6 @@
       			$this->session->set_flashdata('post_deleted', 'Your post has been deleted');
       			redirect('posts');
       		}
-
-
+*/
+}
 ?>
