@@ -22,6 +22,7 @@
         //if (file_exists(APPPATH.'views/recipe/'.$page.'.php'))
         $data['title'] = ucfirst($page); // Capitalize the first letter
         $data['comments'] = $this->recipe_model->get_comments($page);
+        $DATA['recipe'] = $page;
 
         if ( ! file_exists(APPPATH.'views/recipes/'.$page.'.php'))
         {
@@ -35,6 +36,16 @@
         $this->load->view('templates/footer', $data);
       }
 
+      public function delete($ID){
+        // Check login
+        if(!$this->session->userdata('logged_in')){
+          redirect('users/login');
+        }
+        $this->post_model->delete_post($ID);
+        // Set message
+        $this->session->set_flashdata('post_deleted', 'Your post has been deleted');
+        redirect('recipes/index');
+      }
       		/*public function index($offset = 0){
       			// Pagination Config
       			$config['base_url'] = base_url() . 'posts/index/';
