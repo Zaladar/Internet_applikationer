@@ -175,7 +175,6 @@ input.comments{
 }
 small.name{
   float: left;
-  height: 30px;
 }
 small.date{
   float: right;
@@ -198,6 +197,10 @@ div.ucomment p {
  padding: 4px 8px;
  margin:0px;
  width:unset;
+}
+
+form.comment{
+  width: 100%;
 }
 
 /*========================= Login / Registration =========================*/

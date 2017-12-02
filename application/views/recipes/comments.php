@@ -21,7 +21,7 @@
   <?php endforeach; ?>
   <?php if($this->session->userdata('logged_in')): ?>
   <div class="comments">
-    <?php echo form_open('recipes/create', 'class="modal-content animate"' ); ?>
+    <?php echo form_open('recipes/create', 'class="comment"' ); ?>
     <form id="comm">
       <div class="ucomment">
         <label></label>

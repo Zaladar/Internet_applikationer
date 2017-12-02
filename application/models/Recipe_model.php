@@ -1,14 +1,25 @@
 <?php
 class Recipe_model extends CI_Model {
 
-        public function __construct()
-        {
+        public function __construct(){
                 $this->load->database();
         }
         public function get_comments($recipe){
           $query = $this->db->get_where('comments', array('recipe' => $recipe));
           return $query->result_array();
         }
+
+        public function set_comments(){
+    			// User data array
+    			$data = array(
+            'username' => $this->input->post(userdata('username')),
+            'recipe' => $this->input->post('recipe'),
+            'comment' => $this->input->post('comment')
+    			);
+    			// Insert user
+    			return $this->db->insert('comments', $data);
+    		}
+
         public function del_comment($ID){
           $this->db->delete('comments', array('ID' => $ID));
         }
