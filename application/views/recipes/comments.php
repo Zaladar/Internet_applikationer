@@ -9,7 +9,7 @@
         <?php if( ($this->session->userdata('logged_in'))&&($this->session->userdata('username')==$comment['username'])) : ?>
             <?php echo form_open('recipes/delete'); ?>
             <form>
-            <input type="hidden" name="id" value="<?php echo $comment['ID']; ?>">
+            <input type="hidden" name="ID" value="<?php echo $comment['ID']; ?>">
             <button type="submit" class="delete">&#9851</button>
             </form><br/>
             <?php echo form_close(); ?>
