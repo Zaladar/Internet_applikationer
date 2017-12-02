@@ -55,7 +55,7 @@
         $this->recipe_model->set_comments();
         // Set message
         $this->session->set_flashdata('comment_created', 'Your post has been created');
-        redirect('recipies/index');
+        redirect('recipes/index');
         }
       }
 ?>
