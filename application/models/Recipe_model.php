@@ -12,7 +12,7 @@ class Recipe_model extends CI_Model {
         public function set_comments(){
     			// User data array
     			$data = array(
-            'username' => $this->input->post(userdata('username')),
+            'username' => $this->input->post($this->session->userdata('username')),
             'recipe' => $this->input->post('recipe'),
             'comment' => $this->input->post('comment')
     			);
