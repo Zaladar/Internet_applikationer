@@ -5,7 +5,7 @@
   <?php foreach($comments as $comment) : ?>
   <div class="comments ">
     <div class="ucomment">
-      <small class="name"> <?php echo $comment['username']; ?> <?php echo $comment['ID']; ?></small>
+      <small class="name"> <?php echo $comment['username']; ?></small>
         <?php if( ($this->session->userdata('logged_in'))&&($this->session->userdata('username')==$comment['username'])) : ?>
             <?php echo form_open('recipes/delete'); ?>
             <form>

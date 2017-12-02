@@ -22,7 +22,7 @@ class Recipe_model extends CI_Model {
     		}
 
         public function del_comment($ID){
-          $this->db->delete('comments', array('ID' => $ID));
+          return $this->db->delete('comments', array('ID' => $ID));
         }
 
         /*class Post_model extends CI_Model{
