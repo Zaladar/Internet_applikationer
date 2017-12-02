@@ -21,7 +21,8 @@ class Recipe_model extends CI_Model {
     			return $this->db->insert('comments', $data);
     		}
 
-        public function del_comment($ID){
+        public function del_comment(){
+          $ID = $this->input->post('ID');
           return $this->db->delete('comments', array('ID' => $ID));
         }
 
