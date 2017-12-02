@@ -41,9 +41,9 @@
         if(!$this->session->userdata('logged_in')){
           redirect('users/login');
         }
-        $this->post_model->delete_post($ID);
+        $this->recipe_model->del_comment($ID);
         // Set message
-        $this->session->set_flashdata('post_deleted', 'Your post has been deleted');
+        $this->session->set_flashdata('comment_deleted', 'Your post has been deleted');
         redirect('recipes/index');
       }
 
@@ -52,9 +52,9 @@
         if(!$this->session->userdata('logged_in')){
           redirect('users/login');
         }
-        $this->post_model->set_comments();
+        $this->recipe_model->set_comments();
         // Set message
-        $this->session->set_flashdata('post_created', 'Your post has been created');
+        $this->session->set_flashdata('comment_created', 'Your post has been created');
         redirect('recipies/index');
         }
       }
