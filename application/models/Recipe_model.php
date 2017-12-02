@@ -17,6 +17,8 @@ class Recipe_model extends CI_Model {
             'recipe' => $this->input->post('recipe'),
             'comment' => $this->input->post('comment')
     			);
+          // cross site scripting
+          $data = $this->security->xss_clean($data);
     			// Insert user
     			return $this->db->insert('comments', $data);
     		}

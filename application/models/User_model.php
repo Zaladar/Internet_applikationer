@@ -10,6 +10,8 @@
         'username' => $this->input->post('username'),
         'password' => $hash,
 			);
+			//Cross site scripting
+			$data = $this->security->xss_clean($data);
 			// Insert user
 			return $this->db->insert('user', $data);
 		}
