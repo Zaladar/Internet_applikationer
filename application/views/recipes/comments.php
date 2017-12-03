@@ -7,8 +7,7 @@
     <div class="ucomment">
       <small class="name"> <?php echo $comment['username']; ?> </small>
         <?php if( ($this->session->userdata('logged_in'))&&($this->session->userdata('username')==$comment['username'])) : ?>
-            <?php echo form_open('recipes/delete'); ?>
-            <input type="hidden" name="ID" value="<?php echo $comment['ID']; ?>">
+            <?php echo form_open('recipes/delete','',array('ID'=>$comment['ID'])); ?>
             <button type="submit" class="delete">&#9851</button>
             <?php echo form_close(); ?><br/>
         <?php endif; ?>
