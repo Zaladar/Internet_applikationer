@@ -19,8 +19,7 @@
       }
 
       public function view($page = 'index'){
-        //if (file_exists(APPPATH.'views/recipe/'.$page.'.php'))
-        $data['title'] = ucfirst($page); // Capitalize the first letter
+        $data['title'] = ucfirst($page);
         $data['comments'] = $this->recipe_model->get_comments($page);
         $data['recipe'] = $page;
 
