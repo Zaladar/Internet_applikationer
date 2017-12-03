@@ -14,13 +14,12 @@ class Recipe_model extends CI_Model {
           $data = array(
             'username' => $this->session->userdata('username'),
             'recipe' => $recipe,
-            'comment' => $this->input->post('comment')
-    			);
+            'comment' => $this->input->post('comment'));
           // XSS protection
           $data = $this->security->xss_clean($data);
           // Insert user
           return $this->db->insert('comments', $data);
-    		}
+        }
 
         public function del_comment($ID){
           return $this->db->delete('comments', array('ID' => $ID));
