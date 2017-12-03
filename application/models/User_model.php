@@ -8,8 +8,8 @@
 		public function register($hash){
 			// User data array
 			$data = array(
-        'username' => $this->input->post('username'),
-        'password' => $hash,
+				'username' => $this->input->post('username'),
+				'password' => $hash,
 			);
 			//Cross site scripting
 			$data = $this->security->xss_clean($data);
@@ -25,7 +25,7 @@
 			if(password_verify($password,$row['password'])&&($result->num_rows() == 1)){
   				return $result->row(0)->ID;
 			}
-      else {return false;}
+			else {return false;}
 		}
 
 		public function verify_username($username){
