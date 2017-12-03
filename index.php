@@ -184,6 +184,19 @@ switch (ENVIRONMENT)
 // END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
 // --------------------------------------------------------------------
 
+
+define('ROOTPATH', realpath(dirname(__FILE__)) . '/');
+
+
+// installed in the docroot?
+if (realpath(dirname(__FILE__)) == $_SERVER['DOCUMENT_ROOT'])
+{
+    define('ROOT', '/');
+}
+else
+{
+    define('ROOT', substr(ROOTPATH, strlen($_SERVER['DOCUMENT_ROOT'])+1));
+}
 /*
  * ---------------------------------------------------------------
  *  Resolve the system path for increased reliability
