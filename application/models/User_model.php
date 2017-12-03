@@ -27,8 +27,8 @@
 			}
       else {return false;}
 		}
-		
-		public function check_username_exists($username){
+
+		public function verify_username($username){
 			$query = $this->db->get_where('user', array('username' => $username));
 			if(empty($query->row_array())){
 				return true;

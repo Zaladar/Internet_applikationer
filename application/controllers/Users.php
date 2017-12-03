@@ -4,7 +4,7 @@ class Users extends CI_Controller{
   // Register user
   public function register(){
     $data['title'] = 'Registration';
-    $this->form_validation->set_rules('username', 'Username', 'required|callback_check_username_exists');
+    $this->form_validation->set_rules('username', 'Username', 'required|callback_verify_username');
     $this->form_validation->set_rules('password', 'Password', 'required');
     if($this->form_validation->run() === FALSE){
       $this->load->view('templates/header');
@@ -65,9 +65,9 @@ class Users extends CI_Controller{
     redirect('users/login');
   }
   // Check if username exists
-  public function check_username_exists($username){
-    $this->form_validation->set_message('check_username_exists', 'That username is taken. Please choose a different one');
-    if($this->user_model->check_username_exists($username)){
+  public function verify_username($username){
+    $this->form_validation->set_message('', 'That username is taken. Please choose a different one');
+    if($this->user_model->verify_username($username)){
       return true;
     } else {
       return false;
