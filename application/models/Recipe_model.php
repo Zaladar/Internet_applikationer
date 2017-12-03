@@ -10,12 +10,12 @@ class Recipe_model extends CI_Model {
           return $query->result_array();
         }
 
-        public function set_comments(){
+        public function set_comments($recipe){
     			// User data array
 
     			$data = array(
             'username' => $this->session->userdata('username'),
-            'recipe' => $this->input->post('recipe'),
+            'recipe' => $recipe,
             'comment' => $this->input->post('comment')
     			);
           // cross site scripting

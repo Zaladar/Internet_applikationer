@@ -46,12 +46,12 @@
         redirect('recipes/index');
       }
 
-      public function create(){
+      public function create($recipe){
         // Check login
         if(!$this->session->userdata('logged_in')){
           redirect('users/login');
         }
-        $this->recipe_model->set_comments();
+        $this->recipe_model->set_comments($recipe);
         // Set message
         $this->session->set_flashdata('comment_created', 'Your post has been created');
         redirect('recipes/index');
