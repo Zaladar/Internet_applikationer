@@ -35,12 +35,12 @@
         $this->load->view('templates/footer', $data);
       }
 
-      public function delete(){
+      public function delete($ID){
         // Check login
         if(!$this->session->userdata('logged_in')){
           redirect('users/login');
         }
-        $this->recipe_model->del_comment();
+        $this->recipe_model->del_comment($ID);
         // Set message
         $this->session->set_flashdata('comment_deleted', 'Your post has been deleted');
         redirect('recipes/index');
