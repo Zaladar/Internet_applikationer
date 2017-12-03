@@ -4,6 +4,7 @@ class Recipe_model extends CI_Model {
         public function __construct(){
                 $this->load->database();
         }
+
         public function get_comments($recipe){
           $query = $this->db->get_where('comments', array('recipe' => $recipe));
           return $query->result_array();

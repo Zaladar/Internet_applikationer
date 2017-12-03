@@ -4,6 +4,7 @@
 		{
 						$this->load->database();
 		}
+
 		public function register($hash){
 			// User data array
 			$data = array(
@@ -15,7 +16,7 @@
 			// Insert user
 			return $this->db->insert('user', $data);
 		}
-		// Log user in
+
 		public function login($username, $password){
 			// Validate
 			$this->db->where('username', $username);
@@ -26,7 +27,7 @@
 			}
       else {return false;}
 		}
-		// Check username exists
+		
 		public function check_username_exists($username){
 			$query = $this->db->get_where('user', array('username' => $username));
 			if(empty($query->row_array())){

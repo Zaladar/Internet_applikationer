@@ -1,26 +1,3 @@
-<br class="clr"/>
-<div id="register" class="modal">
-  <form class="modal-content animate" action="/Model/register.php" method="post">
-    <div class="container">
-      <label></label>
-      <input type="text" placeholder="Enter Username" name="username" required>
-      <label></label>
-      <input type="password" placeholder="Enter Password" name="password" required>
-      <button type="submit">Register</button>
-    </div>
-  </form>
-</div>
-<div id="login" class="modal">
-  <form class="modal-content animate" action="/Model/login.php" method="post">
-    <div class="container">
-      <label></label>
-      <input type="text" placeholder="Enter Username" name="username" required>
-      <label></label>
-      <input type="password" placeholder="Enter Password" name="password" required>
-      <button type="submit">Login</button>
-    </div>
-  </form>
-</div>
 <div style="width: 100%">
   <div class="month">
     <ul>
@@ -49,7 +26,7 @@
         <li>11</li>
         <li>12</li>
         <li>13 <br/>
-          <a href="/View/Recipies/meatballs.php">
+          <a href="<?php echo base_url(); ?>recipes/meatballs">
             <img src="/Images/meatballs.jpg" alt="Meatballs">
           </a>
         </li>
@@ -73,7 +50,7 @@
       <ul class="days">
         <li>22</li>
         <li>23 <br/>
-          <a href="/View/Recipies/pancakes.php">
+          <a href="<?php echo base_url(); ?>recipes/pancakes">
             <img src="/Images/pancakes.jpg" alt="Pancakes" >
           </a>
         </li>
