@@ -16,7 +16,7 @@
   <?php endforeach; ?>
   <?php if($this->session->userdata('logged_in')): ?>
   <div class="comments">
-    <?php echo form_open('recipes/create/'.<?php echo $recipe; ?>, 'class="comment"' ); ?>
+    <?php echo form_open('recipes/create/'.$recipe, 'class="comment"' ); ?>
       <div class="ucomment">
         <label></label>
         <input class="comment" type="text" placeholder="Enter comment" name="comment" required autofocus>
