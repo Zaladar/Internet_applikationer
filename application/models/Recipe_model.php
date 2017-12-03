@@ -11,17 +11,15 @@ class Recipe_model extends CI_Model {
         }
 
         public function set_comments($recipe){
-    			// User data array
-
-    			$data = array(
+          $data = array(
             'username' => $this->session->userdata('username'),
             'recipe' => $recipe,
             'comment' => $this->input->post('comment')
     			);
-          // cross site scripting
+          // XSS protection
           $data = $this->security->xss_clean($data);
-    			// Insert user
-    			return $this->db->insert('comments', $data);
+          // Insert user
+          return $this->db->insert('comments', $data);
     		}
 
         public function del_comment($ID){
