@@ -34,14 +34,12 @@
 <script>
 $(document).ready(function(){
     $("#trialbtn").click(function(){
-      alert("it worked!");
-        /*$("#trial").load("", function(){
-
-        });*/
+        $("#trial").load("<?php echo base_url(); ?>recipes/index", function(){
+        });
     });
 });
 </script>
-<div id="trial">
+<div class="ucomment" id="trial">
 </div>
 <button id ="trialbtn">try this</button>
 <br class="clr"/>
