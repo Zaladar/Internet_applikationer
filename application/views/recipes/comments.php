@@ -33,7 +33,7 @@
 
 <script>
 $(document).ready(function(){
-    $("trialbtn").click(function(){
+    $("#trialbtn").click(function(){
       alert("it worked!");
         /*$("#trial").load("", function(){
 
