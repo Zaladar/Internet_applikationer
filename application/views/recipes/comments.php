@@ -35,7 +35,7 @@ $(document).ready(function(){
           template.find('.name').text(worker.name);
           if(!worker.can_delete) { template.find('.delete').hide() }
         });*/
-        $.get("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(data, status){
+        $.get("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(data){
            $("#trial").each(function(){
              alert(data);
            });
