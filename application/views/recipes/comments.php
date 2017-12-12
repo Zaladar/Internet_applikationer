@@ -41,7 +41,8 @@ $(document).ready(function(){
               var template = worker_template.clone();
               template.find('.name').text(worker['username']);
               //can_delete är en variabel i arrayen som inte är fixad
-              if(!worker.can_delete) { template.find('.delete').hide() }
+              //if(!worker.can_delete) { template.find('.delete').hide() }
+              workers.append(template[0])
            });
        });
     });
