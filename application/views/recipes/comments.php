@@ -32,7 +32,7 @@ $(document).ready(function(){
         /*$("#trial").load("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(){
 
         });*/
-        $("this").hide();
+        $(this).hide();
     });
 });
 </script>
