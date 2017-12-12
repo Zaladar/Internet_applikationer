@@ -34,7 +34,7 @@
 <script>
 $(document).ready(function(){
     $("#trialbtn").click(function(){
-        $("#trial").load("<?php echo base_url(); ?>recipes/index", function(){
+        $("#trial").load("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(){
         });
     });
 });
