@@ -35,7 +35,7 @@
         $this->load->view('templates/footer', $data);
       }
 
-      public function retrieve($page) {
+      public function retrieve($page ='meatballs') {
         $result = $this->recipe_model->get_comments($page);
         return json_encode($result);
       }
