@@ -39,8 +39,8 @@ $(document).ready(function(){
            $("#trial").each(function(i, worker){
               var worker_template = $('<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>');
               var template = worker_template.clone();
-              template.find('.name').text(worker.name);
-              //can_delete är en variabel i arrayen
+              template.find('.name').text(worker['username']);
+              //can_delete är en variabel i arrayen som inte är fixad
               if(!worker.can_delete) { template.find('.delete').hide() }
            });
        });
