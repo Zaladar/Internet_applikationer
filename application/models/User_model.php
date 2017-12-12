@@ -9,7 +9,7 @@
 			// User data array
 			$data = array(
 				'username' => $this->input->post('username'),
-				'password' => $hash,
+				'password' => $hash
 			);
 			//Cross site scripting
 			$data = $this->security->xss_clean($data);

@@ -35,6 +35,11 @@
         $this->load->view('templates/footer', $data);
       }
 
+      public function retrieve($page) {
+        $result = $this->recipe_model->get_comments($page);
+        return json_encode($result);
+      }
+
       public function delete($ID){
         // Check login
         if(!$this->session->userdata('logged_in')){
@@ -43,6 +48,7 @@
         $this->recipe_model->del_comment($ID);
         // Set message
         $this->session->set_flashdata('comment_deleted', 'Your post has been deleted');
+        //tabort redirect
         redirect('recipes/index');
       }
 
@@ -54,6 +60,7 @@
         $this->recipe_model->set_comments($recipe);
         // Set message
         $this->session->set_flashdata('comment_created', 'Your post has been created');
+        //tabort redirect
         redirect('recipes/index');
         }
       }

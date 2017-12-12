@@ -2,7 +2,7 @@
   <h3>Comments</h3>
   <?php foreach($comments as $comment) : ?>
   <div class="comments ">
-    <div class="ucomment">
+    <div class="ucomment" id="ctrial">
       <small class="name"> <?php echo $comment['username']; ?> </small>
         <?php if( ($this->session->userdata('logged_in'))&&($this->session->userdata('username')==$comment['username'])) : ?>
             <?php echo form_open('recipes/delete/'.$comment["ID"]); ?>
@@ -28,4 +28,19 @@
 </div>
 </div>
 </div>
+
+
+
+<script>
+$(document).ready(function(){
+    $("trialbtn").click(function(){
+        $("#trial").load("", function(){
+            <div>"itworked!"</div>
+        });
+    });
+});
+</script>
+<div id="trial">
+</div>
+<button id ="trialbtn">try this</button>
 <br class="clr"/>
