@@ -34,7 +34,7 @@
 <script>
 $(document).ready(function(){
     $("trialbtn").click(function(){
-      <div>"itworked!"</div>
+      ALER("<div>"itworked!"</div>");
         /*$("#trial").load("", function(){
 
         });*/
