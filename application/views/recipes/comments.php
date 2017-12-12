@@ -36,8 +36,12 @@ $(document).ready(function(){
           if(!worker.can_delete) { template.find('.delete').hide() }
         });*/
         $.get("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(data){
-           $("#trial").each(function(){
-             alert(data);
+           $("#trial").each(function(i, worker){
+              var worker_template = $('<div class="ucomment"><small class="name"></small><p></p><button .. /></div>');
+              var template = worker_template.clone();
+              template.find('.name').text(worker.name);
+              //can_delete är en variabel i arrayen
+              if(!worker.can_delete) { template.find('.delete').hide() }
            });
        });
     });
