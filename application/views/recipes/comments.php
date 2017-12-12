@@ -25,21 +25,25 @@
     <?php echo form_close(); ?>
   </div>
 <?php endif; ?>
-</div>
-</div>
-</div>
-
-
 
 <script>
 $(document).ready(function(){
     $("#trialbtn").click(function(){
-        $("#trial").load("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(){
-        });
+        /*$("#trial").load("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(){
+
+        });*/
+        $("this").hide();
     });
 });
 </script>
 <div class="ucomment" id="trial">
 </div>
 <button id ="trialbtn">try this</button>
+
+</div>
+</div>
+</div>
+
+
+
 <br class="clr"/>
