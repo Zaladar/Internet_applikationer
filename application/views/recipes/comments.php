@@ -34,9 +34,10 @@
 <script>
 $(document).ready(function(){
     $("trialbtn").click(function(){
-        $("#trial").load("", function(){
-            <div>"itworked!"</div>
-        });
+      <div>"itworked!"</div>
+        /*$("#trial").load("", function(){
+
+        });*/
     });
 });
 </script>
