@@ -30,9 +30,16 @@
 $(document).ready(function(){
     $("#trialbtn").click(function(){
         /*$("#trial").load("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(){
-
+          var worker_template = $('<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>');
+          var template = worker_template.clone();
+          template.find('.name').text(worker.name);
+          if(!worker.can_delete) { template.find('.delete').hide() }
         });*/
-        $(this).hide();
+        $.get("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(data, status){
+           $("#trial").each(function(){
+             alert(data);
+           });
+       });
     });
 });
 </script>
