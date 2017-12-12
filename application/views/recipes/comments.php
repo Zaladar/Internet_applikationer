@@ -35,14 +35,14 @@ $(document).ready(function(){
           template.find('.name').text(worker.name);
           if(!worker.can_delete) { template.find('.delete').hide() }
         });*/
-        $.get("<?php echo base_url(); ?>recipes/retrieve", function(data){
+        $.get("<?php echo base_url(); ?>recipes/retrieve", function(worker){
            $("#trial").each(function(i, worker){
               var worker_template = $('<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>');
               var template = worker_template.clone();
               template.find('.name').text(worker['username']);
               //can_delete är en variabel i arrayen som inte är fixad
               //if(!worker.can_delete) { template.find('.delete').hide() }
-              workers.append(template[0])
+
            });
        });
     });
