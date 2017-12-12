@@ -37,7 +37,7 @@ $(document).ready(function(){
         });*/
         $.get("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(data){
            $("#trial").each(function(i, worker){
-              var worker_template = $('<div class="ucomment"><small class="name"></small><p></p><button .. /></div>');
+              var worker_template = $('<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>');
               var template = worker_template.clone();
               template.find('.name').text(worker.name);
               //can_delete är en variabel i arrayen
