@@ -31,13 +31,13 @@ $(document).ready(function(){ //remember to put document.ready function when you
     $('#trialbtn').on('click',function (){// should be converted click -> submit
         $.ajax({
             url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
-            dataType: 'text',
+            dataType: 'json',
             type: "POST",
             success: function (result) {
                 //var obj = $.parseJSON(result);
                 var output='';
                 for(var i=0; i< $result.length;i++){
-                  output +=result[i].username
+                  output +=result[i].username;
                 }
                 $('#trial').html();
                 /*$.each(obj,function(index, object) {
