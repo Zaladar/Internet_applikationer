@@ -29,7 +29,7 @@
 
 <script>
 $(document).ready(function(){ //remember to put document.ready function when you are using jquery then insert your jquery functions inside.
-  
+  alert(<?php echo $this->session->userdata('username').'.'.$comment['username'];?>);
     $('#trialbtn').click(function (){// should be converted click -> submit
         $.ajax({
             url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
