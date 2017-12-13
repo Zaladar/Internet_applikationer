@@ -37,7 +37,7 @@
 
       public function retrieve($page) {
         $result = $this->recipe_model->get_comments($page);
-        return json_encode($result);
+        echo json_encode($result);
       }
 
       public function delete($ID){

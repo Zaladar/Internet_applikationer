@@ -27,6 +27,41 @@
 <?php endif; ?>
 
 <script>
+$(document).ready(function(){ //remember to put document.ready function when you are using jquery then insert your jquery functions inside.
+    $('#btnList').on('submit',function (){// should be converted click -> submit
+        $.ajax({
+            url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
+            dataType: 'json',
+            type: "GET",
+            success: function (result) {
+                var obj = $.parseJSON(result);
+                $.each(obj,function(index, object) {
+                    $('#trial').append('<li>' + object['name'] + '</li>');// ska göras till en sträng som skrivs över
+                });
+            }
+        })
+    });
+/*
+    $('#comment_form').submit(function (e) {
+        e.preventDefault();
+        var yourItem = $('#item_name').val();
+        $.ajax({
+            url: "<?php echo base_url();?>/cashbook/new_item",
+            type: 'POST',
+            data: {data:yourItem},
+            success: function (data) {
+                alert('THIS WORKED');
+
+            },
+            error: function () {
+                alert('Nah died');
+            }
+
+        })
+    });
+*/
+});
+
 $(document).ready(function(){
     $("#trialbtn").click(function(){
         /*$("#trial").load("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(){
