@@ -2,7 +2,7 @@
   <h3>Comments</h3>
   <script>
     function dasEvent(target){// should be converted click -> submit
-      target.on('submit', function(e) {
+      target.submit(function(e) {
         e.preventDefault();
         var that = $(this),
         url = that.attr('action'),
