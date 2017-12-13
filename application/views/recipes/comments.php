@@ -3,13 +3,13 @@
   <script src="<?php echo base_url();?>/js/comments.js"></script>
   <?php if($this->session->userdata('logged_in')): ?>
   <div class="comments">
-    <?php echo form_open('recipes/create/'.$recipe, 'class="comment"' ); ?>
+    <form action="<?php echo base_url()'recipes/delete'.$recipe?>" method="POST">
       <div class="ucomment">
         <label></label>
         <input class="comment" type="text" placeholder="Enter comment" name="comment" required autofocus>
         <button id="smallbtn" type="submit">Submit</button>
       </div>
-    <?php echo form_close(); ?>
+    </form>
   </div>
   <?php endif; ?>
 </div>
