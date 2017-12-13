@@ -40,7 +40,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
                 for(var i=0; i< $result.length;i++){
                   output += '<div class="comments "><div class="ucomment"><small class="name">'
                   + result[i].username; + '</small>'
-                  if(<?php echo $this->session->userdata('logged_in') ;?>){
+                  if(true){
                     output += 'form action="<?php echo base_url();?>"recipes/delete/"' + result[i].ID +'method="POST">'
                     + '<button type="submit" class="delete">&#9851</button></form>';
                   }
