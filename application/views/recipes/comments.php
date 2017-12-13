@@ -32,7 +32,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
         $.ajax({
             url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
             dataType: 'json',
-            type: "POST",
+            type: "GET",
             success: function (result) {
                 //var obj = $.parseJSON(result);
                 var output='';
