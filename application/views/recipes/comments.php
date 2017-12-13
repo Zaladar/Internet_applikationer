@@ -6,7 +6,7 @@
         e.preventDefault();
         var that = $(this),
         url = that.attr('action'),
-        type = that.attr('method'),
+        type = "POST",
         data = {};
         that.find('[name]').each(function(index, value) {
            var that = $(this),
