@@ -36,7 +36,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
             success: function (result) {
                 //var obj = $.parseJSON(result);
                 var output='';
-                for(var i=0; i< $result.length;i++){
+                for(var i=0; i< result.length;i++){
                   output +=result[i].username;
                 }
                 $('#trial').html();
