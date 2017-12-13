@@ -29,18 +29,19 @@
 
 <script>
 $(document).ready(function(){ //remember to put document.ready function when you are using jquery then insert your jquery functions inside.
+  alert("<?php echo $this->session->userdata('username').'.'.$comment['username'];?>");
     $('#trialbtn').click(function (){// should be converted click -> submit
         $.ajax({
             url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
             dataType: 'json',
             type: "GET",
             success: function (result) {
+                var trial = '<?php echo $this->session->userdata('username') ;?>';
                 //var obj = $.parseJSON(result);
                 var output='';
                 for(var i=0; i< result.length;i++){
                   output += '<div class="comments "><div class="ucomment"><small class="name">'+ result[i].username + '</small>';
-                  alert(result[i].username);
-                  if(<?php echo $this->session->userdata('username') ;?> == result[i].username){
+                  if( trial = result[i].username){
                     output += '<form action="<?php echo base_url();?>recipes/delete/' + result[i].ID + '" method="POST">' + '<button type="submit" class="delete">&#9851</button></form></br><br class="clr"/>';
                   }
                   output += '<p class="comment">' + result[i].comment + '</p></div></div>';
