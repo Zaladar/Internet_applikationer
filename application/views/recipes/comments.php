@@ -47,28 +47,6 @@ $(document).ready(function(){ //remember to put document.ready function when you
         })
     });
 });
-
-/*
-    $('#items_form').submit(function (e) {
-        e.preventDefault();
-        var yourItem = $('#item_name').val();
-        $.ajax({
-            url: "<?php echo base_url();?>/cashbook/new_item",
-            type: 'POST',
-            data: {data:yourItem},
-            success: function (data) {
-                alert('THIS WORKED');
-
-            },
-            error: function () {
-                alert('Nah died');
-            }
-
-        })
-    });
-*/
-});
-
 </script>
 <div class="ucomment" id="trial">
 </div>
