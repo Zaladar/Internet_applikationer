@@ -1,7 +1,7 @@
 <div class="column">
   <h3>Comments</h3>
   <script>
-    function commentEvent(target){// should be converted click -> submit
+    function cEvent(target){// should be converted click -> submit
       target.on('submit', function(e) {
         e.preventDefault();
         var that = $(this),
@@ -27,7 +27,7 @@
 
       });
     };
-    eventHandler($('form.ajax'));
+    cEvent($('form.ajax'));
     function loadComments(e){
       $.ajax({
           type: "ajax",
