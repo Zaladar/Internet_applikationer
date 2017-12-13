@@ -52,10 +52,8 @@
       if (chk == false){
         var chk =true;
         loadComments();
-
       }
     };
-    });
   </script>
 
   <?php if($this->session->userdata('logged_in')): ?>
