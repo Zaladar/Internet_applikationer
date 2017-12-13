@@ -6,7 +6,7 @@
         e.preventDefault();
         var that = $(this),
         url = that.attr('action'),
-        type = "POST",
+        type = that.attr('method'),
         data = {};
         that.find('[name]').each(function(index, value) {
            var that = $(this),
@@ -48,6 +48,12 @@
               dasEvent($('#comments form.ajax'));
           }
       })
+      var chk;
+      if (chk == false){
+        var chk =true;
+        loadComments();
+
+      }
     };
     });
   </script>
