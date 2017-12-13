@@ -5,7 +5,7 @@
     <div class="ucomment">
       <small class="name"> <?php echo $comment['username']; ?> </small>
         <?php if( ($this->session->userdata('logged_in'))&&($this->session->userdata('username')==$comment['username'])) : ?>
-          
+
             <?php echo form_open('recipes/delete/'.$comment["ID"]); ?>
             <button type="submit" class="delete">&#9851</button>
             <?php echo form_close(); ?><br/>
@@ -42,7 +42,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
                   if(true){
                     output += '<form action="<?php echo base_url();?>recipes/delete/' + result[i].ID + '" method="POST">' + '<button type="submit" class="delete">&#9851</button></form>';
                   }
-                  output += '<p class="comment">' + result[i].comment + '</p></div></div></p>';
+                  output += '<p class="comment">' + result[i].comment + '</p></div></div>';
                 }
                 $('#trial').html(output);
                 /*'<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>'
