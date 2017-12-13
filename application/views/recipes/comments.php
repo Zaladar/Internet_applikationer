@@ -48,6 +48,7 @@
               dasEvent($('#comments form.ajax'));
           }
       })
+      loadComments();
       var chk;
       if (chk == false){
         var chk =true;
