@@ -1,7 +1,8 @@
 <div class="column">
   <h3>Comments</h3>
-  <?php foreach($comments as $comment) : ?>
+
   <div class="comments ">
+    <?php foreach($comments as $comment) : ?>
     <div class="ucomment" id="ctrial">
       <small class="name"> <?php echo $comment['username']; ?> </small>
         <?php if( ($this->session->userdata('logged_in'))&&($this->session->userdata('username')==$comment['username'])) : ?>
@@ -12,8 +13,9 @@
         <br class="clr"/>
       <p class="comment"> <?php echo $comment['comment']; ?> </p>
     </div>
+    <?php endforeach; ?>
   </div>
-  <?php endforeach; ?>
+
   <?php if($this->session->userdata('logged_in')): ?>
   <div class="comments">
     <?php echo form_open('recipes/create/'.$recipe, 'class="comment"' ); ?>
@@ -28,21 +30,19 @@
 
 <script>
 $(document).ready(function(){ //remember to put document.ready function when you are using jquery then insert your jquery functions inside.
-    $('#trialbtn').click(function (){// should be converted click -> submit
+    $('#trialbtn').on('click',function (){// should be converted click -> submit
         $.ajax({
             url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
-            dataType: 'json',
-            type: "GET",
+            dataType: 'text',
+            type: "POST",
             success: function (result) {
                 //var obj = $.parseJSON(result);
                 var output='';
-                for(var i=0; i< result.length;i++){
+                for(var i=0; i< $result.length;i++){
                   output +=result[i].username;
                 }
-                $('#trial').html(output);
-                /*$.each(obj,function(index, object) {
-                    $('#trial').html('<li>' + object['username'] + '</li>');
-                });*/
+                '<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>'
+
             }
         })
     });
