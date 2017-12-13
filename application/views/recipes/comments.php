@@ -35,7 +35,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
             type: "GET",
             success: function (result) {
                 $.each(obj,function(index, result) {
-                    $('#trial').append('<li>' + result['username'] + '</li>');// ska göras till en sträng som skrivs över
+                    $('#trial').html('<li>' + result['username'] + '</li>');// ska göras till en sträng som skrivs över
                 });
             }
         })
