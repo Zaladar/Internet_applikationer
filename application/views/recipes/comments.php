@@ -1,5 +1,6 @@
 <div class="column">
   <h3>Comments</h3>
+  <div id="comments"></div>
   <script>
     function dasEvent(target){// should be converted click -> submit
       target.submit(function(e) {
@@ -48,12 +49,6 @@
               dasEvent($('#comments form.ajax'));
           }
       })
-      loadComments();
-      var chk;
-      if (chk == false){
-        var chk =true;
-        loadComments();
-      }
     };
   </script>
 
