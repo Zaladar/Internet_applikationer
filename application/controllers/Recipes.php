@@ -46,10 +46,6 @@
           redirect('users/login');
         }
         $this->recipe_model->del_comment($ID);
-        // Set message
-        $this->session->set_flashdata('comment_deleted', 'Your post has been deleted');
-        //tabort redirect
-        redirect('recipes/index');
       }
 
       public function create($recipe){
@@ -58,10 +54,6 @@
           redirect('users/login');
         }
         $this->recipe_model->set_comments($recipe);
-        // Set message
-        $this->session->set_flashdata('comment_created', 'Your post has been created');
-        //tabort redirect
-        redirect('recipes/index');
         }
       }
 ?>
