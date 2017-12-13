@@ -31,7 +31,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
     $('#btnList').on('submit',function (){// should be converted click -> submit
         $.ajax({
             url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
-            dataType: 'json',
+            dataType: 'text',
             type: "GET",
             success: function (result) {
                 var obj = $.parseJSON(result);
