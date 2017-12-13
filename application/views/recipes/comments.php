@@ -35,13 +35,14 @@ $(document).ready(function(){ //remember to put document.ready function when you
             type: "POST",
             success: function (result) {
                 //var obj = $.parseJSON(result);
-                $result= $(result);
+                var output='';
                 for(var i=0; i< $result.length;i++){
-                  $('#trial').html(result[i]);
+                  output +=result[i].username
                 }
-                $.each(obj,function(index, object) {
+                $('#trial').html();
+                /*$.each(obj,function(index, object) {
                     $('#trial').html('<li>' + object['username'] + '</li>');
-                });
+                });*/
             }
         })
     });
