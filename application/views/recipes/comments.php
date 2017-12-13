@@ -39,7 +39,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
                 for(var i=0; i< result.length;i++){
                   output +=result[i].username;
                 }
-                $('#trial').append(.html(output);)
+                $('#trial').html(output);
                 /*$.each(obj,function(index, object) {
                     $('#trial').html('<li>' + object['username'] + '</li>');
                 });*/
