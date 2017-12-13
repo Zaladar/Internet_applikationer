@@ -46,6 +46,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
                   }
                   + '<p class="comment">' + result[i].comments + '</p>';
                 }
+                $('#trial').html(output);
                 /*'<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>'
                 $.each(obj,function(index, object) {
                     $('#trial').html('<li>' + object['username'] + '</li>');
