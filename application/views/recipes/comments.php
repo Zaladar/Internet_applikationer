@@ -30,7 +30,7 @@
 $(document).ready(function(){ //remember to put document.ready function when you are using jquery then insert your jquery functions inside.
     $('#trialbtn').on('click',function (){// should be converted click -> submit
         $.ajax({
-            url: "<?php echo base_url();?>index.php/cashbook/get_item",
+            url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
             dataType: 'text',
             type: "POST",
             success: function (result) {
@@ -42,7 +42,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
         })
     });
 
-
+/*
     $('#items_form').submit(function (e) {
         e.preventDefault();
         var yourItem = $('#item_name').val();
@@ -60,9 +60,9 @@ $(document).ready(function(){ //remember to put document.ready function when you
 
         })
     });
-
+*/
 });
-
+/*
 $(document).ready(function(){
     $("#trialbtn").click(function(){
         /*$("#trial").load("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(){
@@ -70,7 +70,7 @@ $(document).ready(function(){
           var template = worker_template.clone();
           template.find('.name').text(worker.name);
           if(!worker.can_delete) { template.find('.delete').hide() }
-        });*/
+        });
         $.get("<?php echo base_url(); ?>recipes/retrieve/meatballs", function(worker){
            $("#trial").each(function(i, worker){
               var worker_template = $('<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>');
@@ -82,7 +82,7 @@ $(document).ready(function(){
            });
        });
     });
-});
+});*/
 </script>
 <div class="ucomment" id="trial">
 </div>
