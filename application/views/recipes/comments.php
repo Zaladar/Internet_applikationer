@@ -35,7 +35,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
             type: "POST",
             success: function (result) {
                 var obj = $.parseJSON(result);
-                $.each(obj,function(0, object) {
+                $.each(obj,function(index, object) {
                     $('#trial').html('<li>' + object['username'] + '</li>');
                 });
             }
@@ -61,7 +61,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
         })
     });
 */
-  });
+});
 /*
 $(document).ready(function(){
     $("#trialbtn").click(function(){
