@@ -1,15 +1,6 @@
 <div class="column">
   <h3>Comments</h3>
   <script src="<?php echo base_url();?>js/comments.js"></script>
-  <div class="comments">
-    <form action="<?php echo (base_url()).'recipes/create/'.$recipe;?>">
-      <div class="ucomment">
-        <label></label>
-        <input class="comment" type="text" placeholder="Enter comment" name="comment" required autofocus>
-        <button id="smallbtn" type="submit">Submit</button>
-      </div>
-    </form>
-  </div>
   <?php if($this->session->userdata('logged_in')): ?>
   <div class="comments">
     <?php echo form_open('recipes/create/'.$recipe, 'class="comment"' ); ?>
