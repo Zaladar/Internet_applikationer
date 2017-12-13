@@ -28,7 +28,7 @@
 
 <script>
 $(document).ready(function(){ //remember to put document.ready function when you are using jquery then insert your jquery functions inside.
-    $('#trialbtn').click(function (){// should be converted click -> submit
+    $('#trialbtn').on('click',function (){// should be converted click -> submit
         $.ajax({
             url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
             dataType: 'json',
