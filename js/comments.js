@@ -1,5 +1,4 @@
 <script>
-$(document).ready(function() { //remember to put document.ready function when you are using jquery then insert your jquery functions inside.
     target.submit(function (){// should be converted click -> submit
         alert("hello world");
         target.on('submit', function(e) {
@@ -49,5 +48,5 @@ function loadComments(e){
       }
   })
 };
-});
+
 </script>
