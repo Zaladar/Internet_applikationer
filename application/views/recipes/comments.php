@@ -35,7 +35,6 @@ $(document).ready(function(){ //remember to put document.ready function when you
             dataType: 'json',
             type: "GET",
             success: function (result) {
-                var trial = '<?php echo $this->session->userdata('username') ;?>';
                 //var obj = $.parseJSON(result);
                 var output='';
                 for(var i=0; i< result.length;i++){
