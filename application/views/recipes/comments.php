@@ -2,9 +2,10 @@
   <h3>Comments</h3>
   <?php foreach($comments as $comment) : ?>
   <div class="comments ">
-    <div class="ucomment" id="ctrial">
+    <div class="ucomment">
       <small class="name"> <?php echo $comment['username']; ?> </small>
         <?php if( ($this->session->userdata('logged_in'))&&($this->session->userdata('username')==$comment['username'])) : ?>
+          //delete
             <?php echo form_open('recipes/delete/'.$comment["ID"]); ?>
             <button type="submit" class="delete">&#9851</button>
             <?php echo form_close(); ?><br/>
@@ -37,7 +38,13 @@ $(document).ready(function(){ //remember to put document.ready function when you
                 //var obj = $.parseJSON(result);
                 var output='';
                 for(var i=0; i< $result.length;i++){
-                  output +=result[i].username;
+                  output += '<div class="comments "><div class="ucomment"><small class="name">'
+                  + result[i].username; + '</small>'
+                  if(<?php echo(if ($this->session->userdata('logged_in'))&&($this->session->userdata('username')==$comment['username']));)?>){
+                    output += 'form action="<?php echo base_url();?>"recipes/delete/"' + result[i].ID +'method="POST">'
+                    + '<button type="submit" class="delete">&#9851</button></form>';
+                  }
+                  + '<p class="comment">' + result[i].comments + '</p>';
                 }
                 '<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>'
                 /*$.each(obj,function(index, object) {
