@@ -1,5 +1,5 @@
 <div class="column">
-  <h3>Comments</h3>
+  <h3>Comments</h3> 
   <script src="<?php echo base_url();?>js/comments.js"></script>
   <?php if($this->session->userdata('logged_in')): ?>
   <div class="comments">

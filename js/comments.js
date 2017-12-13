@@ -1,6 +1,5 @@
 <script>
 function commentEvent(target){// should be converted click -> submit
-  
   target.on('submit', function(e) {
     e.preventDefault();
     var that = $(this),
