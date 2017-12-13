@@ -1,7 +1,6 @@
 <div class="column">
   <h3>Comments</h3>
   <script>
-  $(document).ready(function() { //remember to put document.ready function when you are using jquery then insert your jquery functions inside.
     function commentEvent(target){// should be converted click -> submit
       target.on('submit', function(e) {
         e.preventDefault();
@@ -27,30 +26,30 @@
         });
 
       });
-    });
-  eventHandler($('form.ajax'));
-  function loadComments(e){
-    $.ajax({
-        type: "ajax",
-        url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
-        async: true,
-        dataType: 'json',
-        success: function (result) {
-            //var obj = $.parseJSON(result);
-            var output='';
-            for(var i=0; i< result.length;i++){
-              output += '<div class="comments "><div class="ucomment"><small class="name">'+ result[i].username + '</small>';
-              if( '<?php echo $this->session->userdata('username') ;?>' == result[i].username){
-                output += '<form action="<?php echo base_url();?>recipes/delete/' + result[i].ID + '" method="POST">' + '<button type="submit" class="delete">&#9851</button></form>';
+    };
+    eventHandler($('form.ajax'));
+    function loadComments(e){
+      $.ajax({
+          type: "ajax",
+          url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
+          async: true,
+          dataType: 'json',
+          success: function (result) {
+              //var obj = $.parseJSON(result);
+              var output='';
+              for(var i=0; i< result.length;i++){
+                output += '<div class="comments "><div class="ucomment"><small class="name">'+ result[i].username + '</small>';
+                if( '<?php echo $this->session->userdata('username') ;?>' == result[i].username){
+                  output += '<form action="<?php echo base_url();?>recipes/delete/' + result[i].ID + '" method="POST">' + '<button type="submit" class="delete">&#9851</button></form>';
+                }
+                output += '</br><br class="clr"/><p class="comment">' + result[i].comment + '</p></div></div>';
               }
-              output += '</br><br class="clr"/><p class="comment">' + result[i].comment + '</p></div></div>';
-            }
-            $('#comments').html(output);
-            cEvent($('#comments form.ajax'));
-        }
-    })
-  };
-  });
+              $('#comments').html(output);
+              cEvent($('#comments form.ajax'));
+          }
+      })
+    };
+    });
   </script>
 
   <?php if($this->session->userdata('logged_in')): ?>
