@@ -37,6 +37,7 @@
 
       public function retrieve($page) {
         $result = $this->recipe_model->get_comments($page);
+        $result['un'] = $this->session->userdata('username');
         echo json_encode($result);
       }
 
