@@ -1,31 +1,31 @@
 <script>
-    target.submit(function (){// should be converted click -> submit
-        alert("hello world");
-        target.on('submit', function(e) {
-        e.preventDefault();
-        var that = $(this),
-        url = that.attr('action'),
-        type = that.attr('method'),
-        data = {};
-        that.find('[name]').each(function(index, value) {
-           var that = $(this),
-           name = that.attr('name'),
-           value = that.val();
-           data[name] = value;
-         });
+function commentEvent(target){// should be converted click -> submit
+  
+  target.on('submit', function(e) {
+    e.preventDefault();
+    var that = $(this),
+    url = that.attr('action'),
+    type = that.attr('method'),
+    data = {};
+    that.find('[name]').each(function(index, value) {
+       var that = $(this),
+       name = that.attr('name'),
+       value = that.val();
+       data[name] = value;
+     });
 
-        $.ajax({
-        url: url,
-        type: type,
-        data: data,
-        success: function(response) {
-          $(that)[0].reset();
-          loadComments();
-        }
+    $.ajax({
+    url: url,
+    type: type,
+    data: data,
+    success: function(response) {
+      $(that)[0].reset();
+      loadComments();
+      }
     });
 
-    });
-});
+  });
+};
 eventHandler($('form.ajax'));
 function loadComments(e){
   $.ajax({
@@ -48,5 +48,5 @@ function loadComments(e){
       }
   })
 };
-
+});
 </script>
