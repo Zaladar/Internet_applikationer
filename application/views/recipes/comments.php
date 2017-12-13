@@ -1,8 +1,7 @@
 <div class="column">
   <h3>Comments</h3>
-
+  <?php foreach($comments as $comment) : ?>
   <div class="comments ">
-    <?php foreach($comments as $comment) : ?>
     <div class="ucomment" id="ctrial">
       <small class="name"> <?php echo $comment['username']; ?> </small>
         <?php if( ($this->session->userdata('logged_in'))&&($this->session->userdata('username')==$comment['username'])) : ?>
@@ -13,9 +12,8 @@
         <br class="clr"/>
       <p class="comment"> <?php echo $comment['comment']; ?> </p>
     </div>
-    <?php endforeach; ?>
   </div>
-
+  <?php endforeach; ?>
   <?php if($this->session->userdata('logged_in')): ?>
   <div class="comments">
     <?php echo form_open('recipes/create/'.$recipe, 'class="comment"' ); ?>
@@ -42,7 +40,9 @@ $(document).ready(function(){ //remember to put document.ready function when you
                   output +=result[i].username;
                 }
                 '<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>'
-
+                /*$.each(obj,function(index, object) {
+                    $('#trial').html('<li>' + object['username'] + '</li>');
+                });*/
             }
         })
     });
