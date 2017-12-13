@@ -45,48 +45,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
             }
         })
     });
-
-/*
-    $('#items_form').submit(function (e) {
-        e.preventDefault();
-        var yourItem = $('#item_name').val();
-        $.ajax({
-            url: "<?php echo base_url();?>/cashbook/new_item",
-            type: 'POST',
-            data: {data:yourItem},
-            success: function (data) {
-                alert('THIS WORKED');
-
-            },
-            error: function () {
-                alert('Nah died');
-            }
-
-        })
-    });
-*/
 });
-/*
-$(document).ready(function(){
-    $("#trialbtn").click(function(){
-        /*$("#trial").load("<?php echo base_url(); ?>recipes/retrieve/<?php echo $recipe ?>", function(){
-          var worker_template = $('<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>');
-          var template = worker_template.clone();
-          template.find('.name').text(worker.name);
-          if(!worker.can_delete) { template.find('.delete').hide() }
-        });
-        $.get("<?php echo base_url(); ?>recipes/retrieve/meatballs", function(worker){
-           $("#trial").each(function(i, worker){
-              var worker_template = $('<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>');
-              var template = worker_template.clone();
-              template.find('.name').text(worker['username']);
-              //can_delete är en variabel i arrayen som inte är fixad
-              //if(!worker.can_delete) { template.find('.delete').hide() }
-
-           });
-       });
-    });
-});*/
 </script>
 <div class="ucomment" id="trial">
 </div>
