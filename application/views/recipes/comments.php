@@ -1,7 +1,7 @@
 <div class="column">
   <h3>Comments</h3>
   <script>
-    function cEvent(target){// should be converted click -> submit
+    function dasEvent(target){// should be converted click -> submit
       target.on('submit', function(e) {
         e.preventDefault();
         var that = $(this),
@@ -27,7 +27,7 @@
 
       });
     };
-    cEvent($('form.ajax'));
+    dasEvent($('form.ajax'));
     function loadComments(e){
       $.ajax({
           type: "ajax",
@@ -45,7 +45,7 @@
                 output += '</br><br class="clr"/><p class="comment">' + result[i].comment + '</p></div></div>';
               }
               $('#comments').html(output);
-              cEvent($('#comments form.ajax'));
+              dasEvent($('#comments form.ajax'));
           }
       })
     };
