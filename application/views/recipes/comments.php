@@ -34,7 +34,11 @@ $(document).ready(function(){ //remember to put document.ready function when you
             dataType: 'text',
             type: "POST",
             success: function (result) {
-                var obj = $.parseJSON(result);
+                //var obj = $.parseJSON(result);
+                $result= $(result);
+                for(var i=0; i< $result.length;i++){
+                  $('#trial').html(result[i]);
+                }
                 $.each(obj,function(index, object) {
                     $('#trial').html('<li>' + object['username'] + '</li>');
                 });
