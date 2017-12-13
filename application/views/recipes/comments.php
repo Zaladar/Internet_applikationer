@@ -42,7 +42,7 @@ $(document).ready(function(){ //remember to put document.ready function when you
                   if(true){
                     output += '<form action="<?php echo base_url();?>recipes/delete/' + result[i].ID + '" method="POST">' + '<button type="submit" class="delete">&#9851</button></form>';
                   }
-                  output += '<p class="comment">' + result[i].comments + '</p>';
+                  output += '<p class="comment">' + result[i].comment + '</p>';
                 }
                 $('#trial').html(output);
                 /*'<div class="comments "><div class="ucomment"><small class="name"></small><p></p><button type="submit" class="delete">&#9851</button></div></div>'
