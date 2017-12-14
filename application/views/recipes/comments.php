@@ -53,18 +53,13 @@ function dasEvent(target){// should be converted click -> submit
     success: function(response) {
       $(that)[0].reset();
       loadComments();
-    }
+      }
+    });
   });
-});
-return false;
+  return false;
 };
 
 dasEvent($('form.ajax'));
-var trial= false;
-if(!trial){
-  loadComments();
-  trial=true;
-}
 function loadComments(e){
   $.ajax({
       type: "ajax",
@@ -83,10 +78,15 @@ function loadComments(e){
           }
           $('#comments').html(output);
           dasEvent($('#comments form.ajax'));
-      }
-  })
+        }
+    })
     return false;
-};
+  };
+  var trial= false;
+  if(!trial){
+    loadComments();
+    trial=true;
+  }
   </script>
 
   <?php if($this->session->userdata('logged_in')): ?>
