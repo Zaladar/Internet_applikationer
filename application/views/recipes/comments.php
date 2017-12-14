@@ -37,7 +37,6 @@
         async: true,
         dataType: 'json',
         success: function (result) {
-            //var obj = $.parseJSON(result);
             var output='';
             for(var i=0; i< result.length;i++){
               output += '<div class="comments "><div class="ucomment"><small class="name">'+ result[i].username + '</small>';
@@ -52,7 +51,6 @@
       })
       return false;
     };
-  }
   </script>
 
   <?php if($this->session->userdata('logged_in')): ?>
