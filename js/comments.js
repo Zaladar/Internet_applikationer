@@ -1,4 +1,6 @@
 <script>
+
+
 $(document).ready(function() { //remember to put document.ready function when you are using jquery then insert your jquery functions inside.
   function commentEvent(target){// should be converted click -> submit
     target.on('submit', function(e) {
@@ -24,7 +26,6 @@ $(document).ready(function() { //remember to put document.ready function when yo
         loadComments();
         }
       });
-      return false;
     });
     return false;
   });
