@@ -4,7 +4,7 @@
   <script>
   $(document).ready(function(){
   function commentEvent(target){
-  target.on('submit', function(e) {
+  target.submit( function(e) {
     e.preventDefault();
     var that = $(this),
     url = that.attr('action'),
