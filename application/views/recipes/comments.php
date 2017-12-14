@@ -4,8 +4,7 @@
   <script>
   function commentEvent(target){
   target.on('submit', function(e) {
-    e.preventDefault();
-    var that = $(this),
+q       var that = $(this),
     url = that.attr('action'),
     type = that.attr('method'),
     data = {};
@@ -45,7 +44,7 @@ function showComments(e){
       for(var i=0; i< result.length;i++){
         output += '<div class="comments "><div class="ucomment"><small class="name">'+ result[i].username + '</small>';
         if( '<?php echo $this->session->userdata('username') ;?>' == result[i].username){
-          output += '<form action="<?php echo base_url();?>recipes/delete/' + result[i].ID + '" method="POST"><button type="submit" class="delete">&#9851</button></form>';
+          output += '<form action="<?php echo base_url();?>recipes/delete/' + result[i].ID + '" method="POST"></form><button type="submit" class="delete">&#9851</button>';
         }
         output += '</br><br class="clr"/><p class="comment">' + result[i].comment + '</p></div></div>';
       }
