@@ -52,6 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['recipes/index'] = 'recipes/index';
 $route['recipes/delete'] = 'recipes/delete';
 $route['recipes/create'] = 'recipes/create';
+$route['recipes/retrieve'] = 'recipes/retrieve';
 $route['recipes/(:any)'] = 'recipes/view/$1';
 $route['recipes'] = 'recipes/index';
 
