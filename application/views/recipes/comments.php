@@ -48,7 +48,7 @@
             $('#comments').html(output);
             dasEvent($('#comments form.ajax'));
           }
-      })
+      });
       return false;
     };
   </script>
