@@ -64,6 +64,7 @@ function dasEvent(target){// should be converted click -> submit
   return false;
 };
 dasEvent($('form.ajax'));
+  loadComments();
 function loadComments(e){
   $.ajax({
       type: "ajax",
@@ -83,14 +84,14 @@ function loadComments(e){
           $('#comments').html(output);
           dasEvent($('#comments form.ajax'));
       }
-  });
+  })
     return false;
 };
   </script>
 
   <?php if($this->session->userdata('logged_in')): ?>
   <div class="comments">
-    <form action="<?php echo base_url().'recipes/create'?>" method="POST">
+    <form action="<?php echo base_url().'recipes/create/'.$recipe?>" method="POST">
       <div class="ucomment">
         <label></label>
         <input class="comment" type="text" placeholder="Enter comment" name="comment" required autofocus>
