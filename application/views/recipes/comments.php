@@ -61,10 +61,10 @@ function dasEvent(target){// should be converted click -> submit
       }
     });
   });
-  loadComments();
-    return false;
+  return false;
 };
 dasEvent($('form.ajax'));
+  loadComments();
 function loadComments(e){
   $.ajax({
       type: "ajax",
