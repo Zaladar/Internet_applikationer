@@ -22,6 +22,7 @@
         $data['title'] = ucfirst($page);
         $data['comments'] = $this->recipe_model->get_comments($page);
         $data['recipe'] = $page;
+        $this->session->set_userdata($page);
 
         if (!file_exists(APPPATH.'views/recipes/'.$page.'.php'))
         {
