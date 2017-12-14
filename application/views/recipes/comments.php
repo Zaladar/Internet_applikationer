@@ -53,11 +53,12 @@ function dasEvent(target){// should be converted click -> submit
     success: function(response) {
       $(that)[0].reset();
       loadComments();
-      }
-    });
+    }
   });
-  return false;
+});
+return false;
 };
+
 dasEvent($('form.ajax'));
 var trial= false;
 if(!trial){
