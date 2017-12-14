@@ -1,10 +1,10 @@
 <div class="column">
-  <h3>Comments</h3><button type="submit"class="delete">&#9883</button>
+  <h3>Comments</h3>
   <div id="comments">
   </div>
   <script>
     function dasEvent(target){// should be converted click -> submit
-      target.submit(function(e) {
+      target.on('submit',function(e) {
         e.preventDefault();
         var that = $(this),
         url = that.attr('action'),
@@ -32,7 +32,7 @@
     dasEvent($('form.ajax'));
     function loadComments(e){
       $.ajax({
-          type: "GET",
+          type: "ajax",
           url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
           async: true,
           dataType: 'json',
