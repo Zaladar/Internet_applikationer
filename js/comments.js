@@ -29,8 +29,8 @@ $(document).ready(function() { //remember to put document.ready function when yo
     return false;
   });
 commentEvent($('form.ajax'));
+alert("<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>");
 function loadComments(e){
-  alert("<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>");
   $.ajax({
       type: "ajax",
       url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
