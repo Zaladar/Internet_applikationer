@@ -49,13 +49,8 @@
               $('#comments').html(output);
               dasEvent($('#comments form.ajax'));
           }
-      })
-      loadComments();
-      var chk;
-      if (chk == false){
-        var chk =true;
-        loadComments();
-      }
+      });
+return false:
     };
   </script>
 
