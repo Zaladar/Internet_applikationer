@@ -26,8 +26,8 @@
           loadComments();
           }
         });
-
       });
+      return false;
     };
     dasEvent($('form.ajax'));
     function loadComments(e){
