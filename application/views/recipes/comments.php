@@ -1,5 +1,5 @@
 <div class="column">
-  <h3>Comments</h3><button type="submit" class="delete">&#9883</button>
+  <h3>Comments</h3>
   <div id="comments">
   </div>
   <script>
