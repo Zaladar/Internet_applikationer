@@ -3,7 +3,7 @@
   <div id="comments">
   </div>
   <script>
-  function commentEvent(target){
+  /*function commentEvent(target){
   target.on('submit', function(e) {
     e.preventDefault();
     var that = $(this),
@@ -35,7 +35,7 @@
     });
   });
   return false;
-};
+};*/
 
 function dasEvent(target){// should be converted click -> submit
   target.submit(function(e) {
