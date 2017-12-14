@@ -23,8 +23,8 @@ $(document).ready(function() { //remember to put document.ready function when yo
         loadComments();
         }
       });
+      return false;
     });
-    return false;
   });
 commentEvent($('form.ajax'));
 function loadComments(e){
@@ -34,7 +34,6 @@ function loadComments(e){
       async: true,
       dataType: 'json',
       success: function (result) {
-          //var obj = $.parseJSON(result);
           var output='';
           for(var i=0; i< result.length;i++){
             output += '<div class="comments "><div class="ucomment"><small class="name">'+ result[i].username + '</small>';
