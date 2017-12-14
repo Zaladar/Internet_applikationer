@@ -23,8 +23,8 @@ $(document).ready(function() { //remember to put document.ready function when yo
         loadComments();
         }
       });
-
     });
+    return false;
   });
 commentEvent($('form.ajax'));
 function loadComments(e){
@@ -46,7 +46,8 @@ function loadComments(e){
           $('#comments').html(output);
           commentEvent($('#comments form.ajax'));
       }
-  })
+  });
+  return false;
 };
 });
 </script>
