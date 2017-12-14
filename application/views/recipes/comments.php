@@ -26,6 +26,7 @@
           loadComments();
           }
         });
+
       });
       return false;
     };
@@ -49,8 +50,13 @@
               $('#comments').html(output);
               dasEvent($('#comments form.ajax'));
           }
-      });
-return false:
+      })
+      loadComments();
+      var chk;
+      if (chk == false){
+        var chk =true;
+        loadComments();
+      }
     };
   </script>
 
