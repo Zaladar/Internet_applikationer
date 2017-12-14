@@ -5,7 +5,6 @@
   $(document).ready(function(){
   function commentEvent(target){
   target.on('submit', function(e) {
-    print("prevent");
     e.preventDefault();
     var that = $(this),
     url = that.attr('action'),
@@ -34,7 +33,7 @@
 };
 
 // Add first event listerner
-commentEvent($('form.ajax'));
+commentEvent($('form'));
 
 function showComments(e){
   $.ajax({
@@ -47,7 +46,7 @@ function showComments(e){
       for(var i=0; i< result.length;i++){
         output += '<div class="comments "><div class="ucomment"><small class="name">'+ result[i].username + '</small>';
         if( '<?php echo $this->session->userdata('username') ;?>' == result[i].username){
-          output += '<form class="comdel" action="<?php echo base_url();?>recipes/delete/' + result[i].ID + '" method="POST"><button type="submit" class="delete">&#9851</button></form>';
+          output += '<form action="<?php echo base_url();?>recipes/delete/' + result[i].ID + '" method="POST"><button type="submit" class="delete">&#9851</button></form>';
         }
         output += '</br><br class="clr"/><p class="comment">' + result[i].comment + '</p></div></div>';
       }
