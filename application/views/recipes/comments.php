@@ -51,7 +51,7 @@
     })
     return false;
   };
-  });
+
   loadComments();
   </script>
 
