@@ -54,7 +54,7 @@
         if(!$this->session->userdata('logged_in')){
           redirect('users/login');
         }
-        $this->recipe_model->set_comments($data['recipe']);
+        $this->recipe_model->set_comments($this->session->userdata('recipe'));
         }
       }
 ?>
