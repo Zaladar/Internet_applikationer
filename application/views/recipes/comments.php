@@ -64,7 +64,11 @@ function dasEvent(target){// should be converted click -> submit
   return false;
 };
 dasEvent($('form.ajax'));
+var trial= false;
+if{!trial}{
   loadComments();
+  trial=true;
+}
 function loadComments(e){
   $.ajax({
       type: "ajax",
