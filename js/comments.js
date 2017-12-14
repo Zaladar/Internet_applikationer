@@ -25,6 +25,7 @@ $(document).ready(function() { //remember to put document.ready function when yo
       });
       return false;
     });
+    return false;
   });
 commentEvent($('form.ajax'));
 function loadComments(e){
