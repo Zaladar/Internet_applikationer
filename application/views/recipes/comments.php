@@ -53,7 +53,7 @@ function showComments(e){
       // Replace the old content of #comments with the newly fetched comments.
       $('#comments').html(output);
       // Add event listerner to the new comments.
-      commentEvent($('#comments form.ajax'));
+      commentEvent($('#comments form'));
     },
     error: function(){
       alert('could not get data from database');
