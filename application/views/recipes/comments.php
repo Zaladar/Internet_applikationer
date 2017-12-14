@@ -87,6 +87,7 @@ function loadComments(e){
   })
     return false;
 };
+alert("'<?php echo $this->session->userdata('username') ;?>' == result[i].username");
   </script>
 
   <?php if($this->session->userdata('logged_in')): ?>
