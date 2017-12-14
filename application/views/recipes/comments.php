@@ -1,5 +1,5 @@
 <div class="column">
-  <h3>Comments</h3>
+  <h3>Comments</h3><button type="submit" class="delete">&#9883</button>
   <div id="comments">
   </div>
   <script>
@@ -26,11 +26,11 @@
           loadComments();
           }
         });
-
       });
+        return false;
     };
     dasEvent($('form.ajax'));
-    function loadComments(e){
+      function   loadComments(e){
       $.ajax({
           type: "ajax",
           url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
@@ -50,12 +50,7 @@
               dasEvent($('#comments form.ajax'));
           }
       })
-      loadComments();
-      var chk;
-      if (chk == false){
-        var chk =true;
-        loadComments();
-      }
+        return false;
     };
   </script>
 
