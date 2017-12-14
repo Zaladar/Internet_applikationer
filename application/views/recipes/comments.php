@@ -26,6 +26,7 @@
         });
 
       });
+      return false;
     };
   eventHandler($('form.ajax'));
   function loadComments(e){
@@ -48,6 +49,7 @@
             eventHandler($('#comments form.ajax'));
         }
     })
+    return false;
   };
   });
   loadComments();
