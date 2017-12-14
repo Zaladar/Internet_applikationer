@@ -22,7 +22,7 @@
         $data['title'] = ucfirst($page);
         $data['comments'] = $this->recipe_model->get_comments($page);
         $data['recipe'] = $page;
-        $this->session->set_userdata($page);
+        $this->session->set_userdata('recipe', $page);
 
         if (!file_exists(APPPATH.'views/recipes/'.$page.'.php'))
         {
@@ -37,7 +37,7 @@
       }
 
       public function retrieve() {
-        $result = $this->recipe_model->get_comments($data['recipe']);
+        $result = $this->recipe_model->get_comments($this->session->userdata('recipe'));
         echo json_encode($result);
       }
 
