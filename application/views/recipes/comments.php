@@ -32,7 +32,7 @@
     dasEvent($('form.ajax'));
     function loadComments(e){
     $.ajax({
-        type: "GET",
+        type: "ajax",
         url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
         async: true,
         dataType: 'json',
