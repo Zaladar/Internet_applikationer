@@ -38,7 +38,7 @@
 };*/
 
 function dasEvent(target){// should be converted click -> submit
-  target.submit(function(e) {
+  target.on('submit',function(e) {
     e.preventDefault();
     var that = $(this),
     url = that.attr('action'),
@@ -76,7 +76,6 @@ function loadComments(e){
           var output='';
           for(var i=0; i< result.length;i++){
             output += '<div class="comments "><div class="ucomment"><small class="name">'+ result[i].username + '</small>';
-            alert('<?php echo $this->session->userdata('username') ;?>');
             if( '<?php echo $this->session->userdata('username') ;?>' == result[i].username){
               output += '<form action="<?php echo base_url();?>recipes/delete/' + result[i].ID + '" method="POST">' + '<button type="submit" class="delete">&#9851</button></form>';
             }
