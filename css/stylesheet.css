@@ -183,8 +183,11 @@ small.date{
 div.ucomment p {
   margin:0;
 }
-#comm{
-  display:none;
+#comments{
+}
+#comment_input{
+}
+#comment_form{
 }
 #smallbtn{
   display: block;

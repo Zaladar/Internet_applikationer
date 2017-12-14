@@ -26,7 +26,7 @@ $(document).ready(function() { //remember to put document.ready function when yo
 
     });
   });
-eventHandler($('form.ajax'));
+commentEvent($('form.ajax'));
 function loadComments(e){
   $.ajax({
       type: "ajax",
@@ -44,7 +44,7 @@ function loadComments(e){
             output += '</br><br class="clr"/><p class="comment">' + result[i].comment + '</p></div></div>';
           }
           $('#comments').html(output);
-          cEvent($('#comments form.ajax'));
+          commentEvent($('#comments form.ajax'));
       }
   })
 };
