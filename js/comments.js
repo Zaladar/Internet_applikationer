@@ -11,6 +11,7 @@ $(document).ready(function() { //remember to put document.ready function when yo
          var that = $(this),
          name = that.attr('name'),
          value = that.val();
+
          data[name] = value;
        });
 
@@ -29,6 +30,7 @@ $(document).ready(function() { //remember to put document.ready function when yo
   });
 commentEvent($('form.ajax'));
 function loadComments(e){
+  alert("<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>");
   $.ajax({
       type: "ajax",
       url: "<?php echo base_url();?>recipes/retrieve/<?php echo $recipe ?>",
