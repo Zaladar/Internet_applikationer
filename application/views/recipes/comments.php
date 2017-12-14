@@ -2,6 +2,7 @@
   <h3>Comments</h3>
   <div id="comments"></div>
   <script>
+  $(document).ready(function(){
   function commentEvent(target){
   target.on('submit', function(e) {
     print("prevent");
@@ -62,7 +63,7 @@ function showComments(e){
   return false;
 };
 showComments();
-
+  });
   </script>
 
   <?php if($this->session->userdata('logged_in')): ?>
