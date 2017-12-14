@@ -35,8 +35,8 @@
         $this->load->view('templates/footer', $data);
       }
 
-      public function retrieve($page) {
-        $result = $this->recipe_model->get_comments($page);
+      public function retrieve() {
+        $result = $this->recipe_model->get_comments($data['recipe']);
         echo json_encode($result);
       }
 
@@ -48,12 +48,12 @@
         $this->recipe_model->del_comment($ID);
       }
 
-      public function create($recipe){
+      public function create(){
         // Check login
         if(!$this->session->userdata('logged_in')){
           redirect('users/login');
         }
-        $this->recipe_model->set_comments($recipe);
+        $this->recipe_model->set_comments($data['recipe']);
         }
       }
 ?>
