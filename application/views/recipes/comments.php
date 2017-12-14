@@ -3,8 +3,10 @@
   <div id="comments"></div>
   <script>
   function commentEvent(target){
+    alert("we are before target");
   target.on('submit', function(e) {
     e.preventDefault();
+    alert("we are after target");
     var that = $(this),
     url = that.attr('action'),
     type = that.attr('method'),
@@ -28,6 +30,7 @@
       }
     });
   });
+  alert("we are before return");
   return false;
 };
 
