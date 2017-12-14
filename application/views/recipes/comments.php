@@ -50,6 +50,7 @@
     })
   };
   });
+  loadComments();
   </script>
 
   <?php if($this->session->userdata('logged_in')): ?>
